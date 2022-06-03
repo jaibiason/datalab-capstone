@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+    <head>
+        <!-- *uncomment when opening it directly 
+        <link rel="stylesheet" type="text/css" href="global.css"> -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        <style>
+            .footer{
+                display: flex;
+                width: 100vw;
+                height: 200px;
+                background: #EEEEEE;
+                position: relative;
+                padding: 45px 83px 54px 83px;
+            }
+            .footer__pages{
+                display: flex;
+                flex-direction: column;
+                margin-left: 670px;
+            }
+            .footer__pages a{
+                margin: 10px;
+                text-decoration: none;
+                color: black;
+            }
+
+            @media (max-width: 400px){
+                .footer{
+                width: 100vw;
+                height: fit-content;
+                padding: 30px 0;
+                text-align: center;
+                flex-direction: column;
+                }
+                .footer img{
+                    height: 72px;
+                    margin-bottom: 40px;
+                }
+                .footer__pages{
+                    margin-left: 0;
+                }
+                .footer__pages a{
+                    margin-bottom: 40px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="footer">
+            <img src="assets/Logo Full Black and Gradient.svg" alt="Logo Full Black and Gradient">
+            <div class="footer__pages">
+                <a href="#">Help</a>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Documentation</a>
+            </div>
+        </div>
+    </body>
+</html>
