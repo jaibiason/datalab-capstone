@@ -1,8 +1,8 @@
 
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="global.css">
-    <link rel="stylesheet" type="text/css" href="signIn.css">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/signIn.css">
     <title>Change Password</title>
     <?php require("side_grad.html"); ?> 
 

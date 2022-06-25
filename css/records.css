@@ -1,0 +1,110 @@
+.sidenav-records{
+    display: flex;
+}
+.sidenav-records .container1{
+    width: 100%;
+    padding: 5px;
+}
+.sidenav-records h1{
+    margin: 35px 0 62px 20px;
+}
+.bookings-table{
+    border-radius: 7px;
+    background: #F6F6F6;
+    margin: auto;
+    padding: 15px 0 50px;
+}
+.bookings-table .search-download-cont{
+    display: flex;
+    padding: 10px 40px;
+}
+/* SEARCHBAR STYLING */
+.bookings-table form{
+    display: flex;
+    align-items: center;    
+}
+.bookings-table .searchbar-wrapper{
+    display: flex;
+    align-items: center;
+    width: 354px;
+    height: 33px;
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid #D9D9D9;
+    padding-left: 15px;
+}
+.bookings-table .searchbar-wrapper img{
+    /* object-fit: contain; */
+    height: 60%;
+}
+.bookings-table input[type="search"]{
+    width: 354px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    align-items: center;
+    padding: 0 5px 0 10px;
+    font-size: 15px;
+}
+.bookings-table input[type="search"]:focus-visible{
+    outline: none;
+}
+.bookings-table input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-image: url("assets/xmark.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    opacity: 0.4;
+}
+/* SORT BY */
+.search-download-cont .sortby{
+    display: flex;
+    align-items: center;
+}
+/* Button */
+button{   /* maybe move to global css */
+    border-radius: 5px;
+    border: none;
+    background-color: #F3A452;
+    color: white;
+    width: 180px;
+    height: 40px;
+    font-size: 14px;
+    /* margin: auto; */
+    cursor: pointer;;
+}
+button:hover{
+    background-color: #131212;
+    transition: .2s ease-in;
+}
+/* TABLE STYLING */
+.bookings-table table{
+    border-collapse: collapse;
+    width: 100%;
+}
+.bookings-table thead{
+    background-color: #E0E0E0;
+    border-radius: 7px;
+}
+.bookings-table thead th{
+    text-align: start;
+    padding: 10px 0;
+}
+.bookings-table tbody{
+    font-size: 14px;
+}
+.bookings-table tbody tr:nth-of-type(odd){
+    background-color: white;
+}
+.bookings-table tbody tr:nth-of-type(even){
+    background: #F5F5F5;
+}
+.bookings-table td{
+    padding: 15px 0;
+}
+.bookings-table tr th:first-child, .bookings-table tr td:first-child{
+    padding: 0 0 0 40px;
+}

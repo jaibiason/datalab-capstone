@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <head>
-    <link rel="stylesheet" type="text/css" href="global.css?v=2.0">
-    <link rel="stylesheet" type="text/css" href="signIn.css?v=2.0">
+    <link rel="stylesheet" type="text/css" href="css/global.css">
+    <link rel="stylesheet" type="text/css" href="css/signIn.css">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Sign Up</title>
     <?php require("side_grad.html"); ?> 
@@ -19,7 +20,7 @@
             <input type="submit" name="submit" value="Sign In">
         </form>
         <div class="cont_textwrap">
-            <p>Planning to add a new account? Reach out to you administrator for account creation</p>
+            <p>Planning to add a new account? Reach out to your administrator for account creation</p>
         </div>
     </div>
     </section>

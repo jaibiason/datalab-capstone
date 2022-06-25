@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&family=Roboto:wght@300;400&display=swap');
+
+*, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    font-family: 'Almarai', sans-serif;
+    font-weight: 400;
+    box-sizing: inherit;
+}
+
+div{
+    box-sizing: border-box;
+}
+
+form input[type=text]:focus-visible{
+    outline: #F3A452 auto 1px;
+}
+
+a{
+    text-decoration: none;
+}
+
+thead th, tbody td{
+    font-family: 'Roboto', sans-serif;
+}

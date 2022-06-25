@@ -1,0 +1,229 @@
+body{
+    overflow-x: hidden !important;
+}
+section{
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    overflow-x: hidden !important;
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.container1 h1{
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 1.875rem;
+}
+
+.container1 form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 32rem;
+    text-align: start;
+}
+
+.container1 form label{
+    margin: 1.25rem 0 0.625rem 0;
+    font-size: 1.25rem;
+}
+
+.container1 form input{
+    margin-bottom: 2rem;
+}
+
+.container1 form input[type=text]{
+    height: 3rem;
+    border-radius: 0.438rem;
+    border: 1px solid #D9D9D9;
+    font-size: 1.125rem;
+    padding-left: 1rem;
+}
+
+.container1 form input[type=submit], button{   /* maybe move to global css */
+    border-radius: 12px;
+    border: none;
+    background-color: #F3A452;
+    color: white;
+    width: 18.375rem;
+    height: 3.75rem;
+    font-size: 1.438rem;
+    margin: auto;
+    /* no input yet:
+    background-color: #D9D9D9;
+    color: #878787; */
+}
+.container1 form input[type=submit]:hover, button:hover{
+    background-color: #131212;
+    transition: .2s ease-in;
+}
+.continue_margin{
+    margin-top: 2.5rem !important;
+}
+
+.checklist_wrap{
+    display: flex;
+    color: #B1B1B1;
+    font-size: .875rem;
+    margin: 1.25rem 0 2.5rem 0;
+}
+
+.checklist_wrap_col1, .checklist_wrap_col2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding-left: 1.875rem;
+}
+
+.checklist_wrap p{
+    margin-bottom: 1.25rem;
+}
+.checklist_wrap img{
+    width: .75rem;
+    margin-right: .75rem;
+}
+
+.container1 form a{
+    text-align: end;
+    font-size: .9375rem;
+    color: #F3A452;
+    transform: translateY(-0.1875rem);
+    margin-bottom: 2.375rem; /* 17+21 */
+}
+
+.cont_textwrap{
+    width: 26.6875rem;
+    margin: 3.5rem auto;
+    font-size: .9375rem;
+}
+/* for change_pass.php */
+.inline_center{  
+    display: inline-flex;
+    justify-content: center;
+}
+.web_only_view{
+    display: flex;
+}
+.mobile_only_view{
+    display: none;
+}
+
+.cont_textwrap a{
+    text-decoration: none;
+    color: #F3A452;
+}
+
+@media screen and (max-width: 400px){
+    .container1 h1{
+        font-size: 1.75rem;
+        font-weight: 400;
+        margin-bottom: 2.5rem;
+    }
+    
+    .container1 form{
+        /* display: flex;
+        flex-direction: column;
+        margin: auto; */
+        width: 302px;
+        /* text-align: start; */
+    }
+    
+    .container1 form label{
+        margin: 0 0 .4375rem 0;
+        font-size: 1.0625rem;
+    }
+    
+    .container1 form input{
+        margin-bottom: 1.5625rem;
+    }
+    
+    .container1 form input[type=text]{
+        height: 2.6875rem;
+        border-radius: .3125rem;
+        /* border: 1px solid #D9D9D9; */
+        font-size: .875rem;
+        /* padding-left: 1rem; */
+    }
+    
+    .container1 form input[type=submit], button{
+        border-radius: .4375rem;
+        /* border: none; */
+        background-color: #F3A452;
+        color: #FFFFFF;
+        width: 18.875rem;
+        height: 2.6875rem;
+        font-size: 1.1875rem;
+        margin: auto;
+    }
+    .continue_margin{
+        margin-top: .9375rem !important;
+    }
+
+    .checklist_wrap{
+        display: flex;
+        color: #B1B1B1;
+        font-size: .875rem;
+        margin: 0 0 .9375rem;
+        flex-direction: column;
+    }
+    
+    .checklist_wrap_col1, .checklist_wrap_col2{
+        display: flex;
+        flex-direction: column;
+        flex-basis: none;
+        padding-left: 1.25rem;
+    }
+    
+    .checklist_wrap p{
+        margin-bottom: 1.25rem;
+    }
+    .checklist_wrap img{
+        width: .75rem;
+        margin-right: .75rem;
+    }
+    
+    .container1 form a{
+        text-align: end;
+        font-size: .9375rem;
+        color: #F3A452;
+        transform: translateY(-0.9375rem);
+        margin-bottom: 2.375rem; /* 17+21 */
+    }
+
+    a.mobile_only_view{
+        transform: none !important;
+    }
+    .mobile_only_view button{
+        border-radius: .4375rem;
+        border: 1px solid #F3A452;
+        /* background-color: #D9D9D9; */
+        color: #F3A452;
+        /* width: 294px;
+        height: 60px; */
+        font-size: 1.1875rem;
+        /* margin: auto; */
+        background-color: white;
+        margin-top: .625rem;
+    }
+    
+    .cont_textwrap{
+        width: 18.875rem;
+        margin: 3.5rem auto;
+        font-size: .6875rem;
+    }
+    .web_only_view{            /* may put in global css */
+        display: none;
+    }
+    .mobile_only_view{          
+        display: block;
+    }
+}
