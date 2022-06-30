@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Datalab | Dashboard</title>
-    <?php require("navbar.html"); ?> 
+    <?php require("navbar.php"); ?> 
 </head>
 <body>
     <div class="sidenav-dashboard">
@@ -27,12 +27,12 @@
             </div>
 
             <div class="reminders">
-                <h2> <?php echo "Reminders" ?> </h2>
+                <h2> <?php echo "Reminder" ?> </h2>
                 <?php for($i=0;$i<3;$i++){ ?>
                 <div class="reminders__item">
                     <div>
                         <h3>Schedule Requested exceeded <?php echo "15" ?> days</h3>
-                        <h4><a href="">view more</a></h4>
+                        <h4 class="web"><a href="">view more</a></h4>
                     </div>
                     <h4>Code: <?php echo "B-14" ?> </h4>
                     <h4>Event Name: <?php echo "House Blessing"." - "."Juan Ponce Enrile" ?> </h4>
@@ -42,7 +42,7 @@
         </div>
 
         <div class="usertransactions">
-            <table>
+            <table class="web">
                 <thead>
                     <tr>
                         <th>Code</th>
@@ -83,6 +83,32 @@
                     <?php } ?>
                 </tbody>
             </table>
+            
+            <!-- mobile -->
+            <?php for($i=0;$i<3;$i++){ ?>
+                <div class="usertransactions__item mobile">
+                    <div>
+                        <h3>Code </h3>
+                        <h4> <?php echo "BIN-01" ?> </h4>
+                    </div>
+                    <div>
+                        <h3>Name </h3>
+                        <h4> <?php echo "Jose Protacio Rizal" ?> </h4>
+                    </div>
+                    <div>
+                        <h3>Event </h3>
+                        <h4> <?php echo "Baptism" ?> </h4>
+                    </div>
+                    <div>
+                        <h3>Event Date </h3>
+                        <h4><?php echo "March 17, 2023" ?></h4>
+                    </div>
+                    <div>
+                        <h3>Status </h3>
+                        <h4> <?php echo "Pending Seminar Atrendance" ?> </h4>
+                    </div>
+                </div>
+            <?php } ?>
             <span> <a href="">view more</a> </span>
         </div>
     </div>
@@ -196,6 +222,6 @@
 
 </body>
 <footer>
-<?php require("footer.html"); ?> 
+ <?php require("footer.html"); ?> 
 </footer>
 </html>

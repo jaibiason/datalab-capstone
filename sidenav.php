@@ -75,7 +75,7 @@
                 transition: .15s ease-in;
         }
 
-        @media (max-width: 400px){
+        @media (max-width: 600px){
             /* .footer{
             width: 100vw;
             height: fit-content;
@@ -83,18 +83,8 @@
             text-align: center;
             flex-direction: column;
             } */
-            body{
+            .sidenav{
                 display: none;
-            }
-            .footer img{
-                height: 4.5rem;
-                margin-bottom: 2.5rem;
-            }
-            .footer__pages{
-                margin-left: 0;
-            }
-            .footer__pages a{
-                margin-bottom: 2.5rem;
             }
         }
     </style>
