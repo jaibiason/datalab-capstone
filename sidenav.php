@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <head>
-    <!-- *uncomment when opening it directly -->
-    <link rel="stylesheet" type="text/css" href="css/global.css"> 
+    <!-- *uncomment when opening it directly 
+    <link rel="stylesheet" type="text/css" href="css/global.css"> -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <style>
@@ -21,6 +21,7 @@
             text-align: center;
         }
         .sidenav__pages li{
+            height: 60px;
             margin: 5px 0;
             
         }
@@ -42,34 +43,39 @@
             font-weight: 400;
             color: black;
         }
+        .sidenav__pages .space{
+            height: 175px;
+            width: 100%;
+            border-bottom: 1px solid #E9E9E9;
+        }
         /* HOVER STATES */
-        .sidenav__pages li:hover, .active-page{
+        .sidenav__pages li:hover, .sidenav__pages .active-page{
             background: rgba(243, 164, 82, 0.1);
             color: #F3A452;
             border-radius: 5px;
             transition: .15s ease-in;
         }
         .sidenav__pages li:hover svg path,
-            .sidenav__pages li:hover svg, .active-page svg path{
+            .sidenav__pages li:hover svg, .sidenav__pages .active-page svg path{
                 fill: #F3A452;
                 transition: .15s ease-in;
         }
-        .sidenav__pages li:hover .fill-stroke path, .active-page .fill-stroke path{
+        .sidenav__pages li:hover .fill-stroke path, .sidenav__pages .active-page .fill-stroke path{
             fill:#F3A452;
             stroke: #F3A452;
             transition: .15s ease-in;
         }
-        .sidenav__pages li:hover .no-fill path, .active-page .no-fill path{
+        .sidenav__pages li:hover .no-fill path, .sidenav__pages .active-page .no-fill path{
             fill:none;
             stroke: #F3A452;
             transition: .15s ease-in;
         }
-        .sidenav__pages li:hover h3, .active-page h3{
+        .sidenav__pages li:hover h3, .sidenav__pages .active-page h3{
                 color: #F3A452;
                 transition: .15s ease-in;
         }
 
-        @media (max-width: 400px){
+        @media (max-width: 600px){
             /* .footer{
             width: 100vw;
             height: fit-content;
@@ -77,15 +83,8 @@
             text-align: center;
             flex-direction: column;
             } */
-            .footer img{
-                height: 4.5rem;
-                margin-bottom: 2.5rem;
-            }
-            .footer__pages{
-                margin-left: 0;
-            }
-            .footer__pages a{
-                margin-bottom: 2.5rem;
+            .sidenav{
+                display: none;
             }
         }
     </style>
@@ -164,6 +163,19 @@
                     </svg>
                     </div>
                     <h3>Settings</h3>
+                </a>
+            </li>
+
+            <div class="space"></div>
+
+            <li class="<?php if ($page == "logout") {echo "active-page";} ?>" >
+                <a href="">
+                    <div>
+                    <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.28947 20H6.81579V22.5H21.9737V2.5H6.81579V5H4.28947V1.25C4.28947 0.918479 4.42256 0.600537 4.65944 0.366116C4.89633 0.131696 5.21762 0 5.55263 0H23.2368C23.5719 0 23.8931 0.131696 24.13 0.366116C24.3669 0.600537 24.5 0.918479 24.5 1.25V23.75C24.5 24.0815 24.3669 24.3995 24.13 24.6339C23.8931 24.8683 23.5719 25 23.2368 25H5.55263C5.21762 25 4.89633 24.8683 4.65944 24.6339C4.42256 24.3995 4.28947 24.0815 4.28947 23.75V20ZM6.81579 11.25H15.6579V13.75H6.81579V17.5L0.5 12.5L6.81579 7.5V11.25Z" fill="black"/>
+                    </svg>
+                    </div>
+                    <h3>Log Out</h3>
                 </a>
             </li>
         </ul>

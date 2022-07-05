@@ -10,6 +10,7 @@
 }
 .bookings-table{
     border-radius: 7px;
+    height: 620px;
     background: #F6F6F6;
     margin: auto;
     padding: 15px 0 50px;
@@ -17,11 +18,12 @@
 .bookings-table .search-download-cont{
     display: flex;
     padding: 10px 40px;
+    justify-content: space-between;
 }
 /* SEARCHBAR STYLING */
 .bookings-table form{
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
 .bookings-table .searchbar-wrapper{
     display: flex;
@@ -63,6 +65,16 @@
 .search-download-cont .sortby{
     display: flex;
     align-items: center;
+    margin-right: 260px;
+    font-size: 14px;
+}
+.sortby h4{
+    font-weight: 600;
+}
+.sortby select{
+    border: none;
+    background: none;
+    
 }
 /* Button */
 button{   /* maybe move to global css */
@@ -84,6 +96,9 @@ button:hover{
 .bookings-table table{
     border-collapse: collapse;
     width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    box-shadow: 4px 4px 4px 0px #E9E9E940;
 }
 .bookings-table thead{
     background-color: #E0E0E0;
