@@ -370,17 +370,16 @@
     .usertransactions__item div > *{
         font-size: 16px;
         font-family: 'Roboto', sans-serif;
-        
     }
     .usertransactions div:first-child{
         margin-top: 20px;
         border-top: 1px solid #E9E9E9;
         justify-content: space-between;
     }
-    .usertransactions div h3{
+    .usertransactions__item div h3{
         width: 96px;
     }
-    .usertransactions > span{
+    .usertransactions__item > span{
         text-align: end;
     }
     

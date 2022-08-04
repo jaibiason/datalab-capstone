@@ -227,7 +227,7 @@
  <?php require("footer.html"); ?> 
 </footer>
 
-<div class="dashboard-bottom-nav mobile">
+    <div class="dashboard-bottom-nav mobile">
         <div>
             <a id="nav-events" class="" href="#events">Events</a>
             <a id="nav-transact" href="#transactions"> <nobr>Recent Transactions</nobr></a>
