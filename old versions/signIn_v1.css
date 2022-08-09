@@ -1,0 +1,229 @@
+/* body{
+    overflow-x: hidden !important;
+} */
+section{
+    display: flex;
+    position: relative;
+    text-align: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    /* overflow-x: hidden !important; */
+}
+.container1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.container1 h1{
+    font-size: 36px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.container1 form{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 512px;
+    text-align: start;
+}
+
+.container1 form label{
+    margin: 20px 0 10px 0;
+    font-size: 20px;
+}
+
+.container1 form input{
+    margin-bottom: 21px;
+}
+
+.container1 form input[type=text]{
+    height: 48px;
+    border-radius: 7px;
+    border: 1px solid #D9D9D9;
+    font-size: 18px;
+    padding-left: 1rem;
+}
+
+.container1 form input[type=submit], button{   /* maybe move to global css */
+    border-radius: 12px;
+    border: none;
+    background-color: #F3A452;
+    color: white;
+    width: 294px;
+    height: 60px;
+    font-size: 23px;
+    margin: auto;
+    /* no input yet:
+    background-color: #D9D9D9;
+    color: #878787; */
+}
+.container1 form input[type=submit]:hover, button:hover{
+    background-color: #131212;
+    transition: .2s ease-in;
+}
+.continue_margin{
+    margin-top: 40px !important;
+}
+
+.checklist_wrap{
+    display: flex;
+    color: #B1B1B1;
+    font-size: 14px;
+    margin: 20px 0 40px 0;
+}
+
+.checklist_wrap_col1, .checklist_wrap_col2{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    padding-left: 30px;
+}
+
+.checklist_wrap p{
+    margin-bottom: 20px;
+}
+.checklist_wrap img{
+    width: 12px;
+    margin-right: 12px;
+}
+
+.container1 form a{
+    text-align: end;
+    font-size: 15px;
+    color: #F3A452;
+    transform: translateY(-3px);
+    margin-bottom: 38px; /* 17+21 */
+}
+
+.cont_textwrap{
+    width: 427px;
+    margin: 56px auto;
+    font-size: 15px;
+}
+/* for change_pass.php */
+.inline_center{  
+    display: inline-flex;
+    justify-content: center;
+}
+.web_only_view{
+    display: flex;
+}
+.mobile_only_view{
+    display: none;
+}
+
+.cont_textwrap a{
+    text-decoration: none;
+    color: #F3A452;
+}
+
+@media screen and (max-width: 400px){
+    .container1 h1{
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 40px;
+    }
+    
+    .container1 form{
+        /* display: flex;
+        flex-direction: column;
+        margin: auto; */
+        width: 302px;
+        /* text-align: start; */
+    }
+    
+    .container1 form label{
+        margin: 0 0 7px 0;
+        font-size: 17px;
+    }
+    
+    .container1 form input{
+        margin-bottom: 25px;
+    }
+    
+    .container1 form input[type=text]{
+        height: 43px;
+        border-radius: 5px;
+        /* border: 1px solid #D9D9D9; */
+        font-size: 14px;
+        /* padding-left: 1rem; */
+    }
+    
+    .container1 form input[type=submit], button{
+        border-radius: 7px;
+        /* border: none; */
+        background-color: #F3A452;
+        color: #FFFFFF;
+        width: 302px;
+        height: 43px;
+        font-size: 19px;
+        margin: auto;
+    }
+    .continue_margin{
+        margin-top: 15px !important;
+    }
+
+    .checklist_wrap{
+        display: flex;
+        color: #B1B1B1;
+        font-size: 14px;
+        margin: 0 0 15px;
+        flex-direction: column;
+    }
+    
+    .checklist_wrap_col1, .checklist_wrap_col2{
+        display: flex;
+        flex-direction: column;
+        flex-basis: none;
+        padding-left: 20px;
+    }
+    
+    .checklist_wrap p{
+        margin-bottom: 20px;
+    }
+    .checklist_wrap img{
+        width: 12px;
+        margin-right: 12px;
+    }
+    
+    .container1 form a{
+        text-align: end;
+        font-size: 15px;
+        color: #F3A452;
+        transform: translateY(-15px);
+        margin-bottom: 38px; /* 17+21 */
+    }
+
+    a.mobile_only_view{
+        transform: none !important;
+    }
+    .mobile_only_view button{
+        border-radius: 7px;
+        border: 1px solid #F3A452;
+        /* background-color: #D9D9D9; */
+        color: #F3A452;
+        /* width: 294px;
+        height: 60px; */
+        font-size: 19px;
+        /* margin: auto; */
+        background-color: white;
+        margin-top: 10px;
+    }
+    
+    .cont_textwrap{
+        width: 302px;
+        margin: 56px auto;
+        font-size: 11px;
+    }
+    .web_only_view{            /* may put in global css */
+        display: none;
+    }
+    .mobile_only_view{          
+        display: block;
+    }
+}

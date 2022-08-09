@@ -421,8 +421,20 @@ button:hover{
   }
 
 @media screen and (max-width: 678px){
+.sidenav-records .container1 > h1{
+    display: none;
+}
+.sidenav-records .title{
+    margin: 24px 0 45px 10px;
+}
+.title h1{
+    font-size: 20px;
+}
+.sidenav-records h2 {
+    margin: 46px 0 0 21px;
+}
 .sidenav-records .bookings-table{
-    width: 100vw;
+    width: 100%;
     height: fit-content;
 }
 /* FOLDERS */
@@ -474,6 +486,9 @@ button:hover{
     margin-bottom: 83px;
     background: white;
 }
+.record-filter select{
+    width: 100%;
+}
 .records-table{
     margin-bottom: 27px;
     background-color: #F3F3F3;
@@ -483,6 +498,16 @@ button:hover{
     font-size: 16px;
     text-align: start;
     margin: 0
+}
+.records-table.no-res{
+    background-color: white;
+}
+.records-table.no-res h1{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.records-table.no-res h4{
+    text-align: center;
 }
 .usertransactions__item + div {
     justify-content: space-between;
