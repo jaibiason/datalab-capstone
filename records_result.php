@@ -6,14 +6,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Datalab | Records</title>
-    <?php require("navbar.php"); ?> 
+    <?php $page = "records" ;
+    require("navbar.php"); ?> 
 </head>
 <body>
     <div class="sidenav-records">
-    <?php 
-    $page = "records";
-    require("sidenav.php"); 
-    ?>
+    <?php require("sidenav.php"); ?>
     <div class="container1">
         <div class="title">
             <a href="records.php"><svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -43,27 +41,27 @@
                     </div>
                 </div>
                 
-                <button id="btn-add-record" class="add-record">Add New Record</button>
-                <button class="download-records"> 
-                    <!-- download.svg -->
-                    <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect width="22" height="20" fill="#F5F5F5"/>
-                    <rect width="1280" height="1349" transform="translate(-1216 -546)" fill="white"/>
-                    <g clip-path="url(#clip0_484_549)">
-                    <path d="M-1038 -20C-1038 -28.2843 -1031.28 -35 -1023 -35H42C50.2843 -35 57 -28.2843 57 -20V592H-1038V-20Z" fill="#F7F7F7"/>
-                    <rect x="-10" y="-11" width="41" height="41" rx="4" fill="#00AA07"/>
-                    <path d="M11 13V1M11 13L7 9M11 13L15 9M1 15L1.621 17.485C1.72915 17.9177 1.97882 18.3018 2.33033 18.5763C2.68184 18.8508 3.11501 18.9999 3.561 19H18.439C18.885 18.9999 19.3182 18.8508 19.6697 18.5763C20.0212 18.3018 20.2708 17.9177 20.379 17.485L21 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </g>
-                    <defs>
-                    <clipPath id="clip0_484_549">
-                    <path d="M-1038 -20C-1038 -28.2843 -1031.28 -35 -1023 -35H42C50.2843 -35 57 -28.2843 57 -20V592H-1038V-20Z" fill="white"/>
-                    </clipPath>
-                    </defs>
-                    </svg>
-                </button>
+                <div class="addrecord-download">
+                    <button onclick="window.location.href='records_addRecord.php'" class="add-record">Add New Record</button>
+                    <button class="download-records"> 
+                        <!-- download.svg -->
+                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_484_549)">
+                        <rect x="-10" y="-11" width="41" height="41" rx="4" fill="#00AA07"/>
+                        <path d="M11 13V1M11 13L7 9M11 13L15 9M1 15L1.621 17.485C1.72915 17.9177 1.97882 18.3018 2.33033 18.5763C2.68184 18.8508 3.11501 18.9999 3.561 19H18.439C18.885 18.9999 19.3182 18.8508 19.6697 18.5763C20.0212 18.3018 20.2708 17.9177 20.379 17.485L21 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </g>
+                        <defs>
+                        <clipPath id="clip0_484_549">
+                        <path d="M-1038 -20C-1038 -28.2843 -1031.28 -35 -1023 -35H42C50.2843 -35 57 -28.2843 57 -20V592H-1038V-20Z" fill="white"/>
+                        </clipPath>
+                        </defs>
+                        </svg>
+                    </button>
+                </div>
             </div>  
             <div class="records-table">
-                <table>
+                <!-- website -->
+                <table class="web">
                     <thead>
                         <tr>
                             <th>Name</th>
@@ -86,9 +84,38 @@
                         <?php } ?>
                     </tbody>
                 </table>
+
+                <!-- mobile -->
+                <?php  while($row=mysqli_fetch_assoc($mresult)) { ?>
+                <div class="usertransactions__item mobile">
+                    <div>
+                        <span class="codetext-cont">
+                            <h3>Code </h3>
+                            <h4> <?php echo "BIN-". $row['id'] ?> </h4>
+                        </span>
+                        <div class="new hidden">NEW</div>
+                    </div>
+                    <div>
+                        <h3>Name </h3>
+                        <h4> <?php echo $row['name'] ?> </h4>
+                    </div>
+                    <div>
+                        <h3>Event </h3>
+                        <h4> <?php echo $row['event']; ?> </h4>
+                    </div>
+                    <div>
+                        <h3>Event Date </h3>
+                        <h4><?php echo $row['date']; ?></h4>
+                    </div>
+                    <div>
+                        <h3>Status </h3>
+                        <h4> <?php echo $row['status']; ?> </h4>
+                    </div>
+                </div>
+                <?php } ?>
             </div>
             <!-- PAGINATION -->
-            <div class="table-pagination">
+            <div class="table-pagination web">
             <?php 
         
                 $pr_query = "select * from tb_dl_recordtest ";
@@ -132,10 +159,53 @@
             ?>
             </div>
 
+            <!-- MOBILE PAGINATION -->
+            <div class="table-pagination mobile">
+            <?php 
+        
+                $pr_query = "select * from tb_dl_recordtest ";
+                $pr_result = mysqli_query($con,$pr_query);
+                $total_record = mysqli_num_rows($pr_result );
+                
+                $total_page = ceil($total_record/$mnum_per_page);
+                
+                // prev page button
+                if($tb_page>1){
+                    echo "<div><a href='records_result.php?page=".($tb_page-1)."'>
+                        <svg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns=http://www.w3.org/2000/svg'>
+                        <path d='M7.41 10.59L2.83 6L7.41 1.41L6 0L0 6L6 12L7.41 10.59Z' fill='#C4CDD5' />
+                        </svg>
+                    </a></div>";
+                }
+                // page numbers
+                for($i=1;$i<= $total_page;$i++) {
+                    $active = $i == $tb_page ? 'class="active"' : '';
+                    if($i<3) {
+                        echo "<div ". $active ."><a href='records_result.php?page=".$i."' >$i</a></div>";
+                    }
+                    // between pages
+                    if($total_page>5 && $i==5){
+                        echo "<div><a> ... </a></div>";
+                    }
+                    elseif ($i>=($total_page-1)) {
+                        echo "<div ". $active ."><a href='records_result.php?page=".$i."' >$i</a></div>";
+                    }
+                    
+                }
+                // next page button
+                if($i>$tb_page){
+                    echo "<div><a href='records_result.php?page=".($tb_page+1)."' >
+                        <svg width='8' height='12' viewBox='0 0 8 12' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                        <path d='M0.589966 10.59L5.16997 6L0.589966 1.41L1.99997 0L7.99997 6L1.99997 12L0.589966 10.59Z' fill='#C4CDD5'/>
+                        </svg>
+                    </a></div>";
+                }
+
+            ?>
+            </div>
+
         </div>
         
-        <?php require("modal-add-record.php") ?>
-
     </div>
 
     </div>
@@ -143,5 +213,4 @@
 <footer>
     <?php require("footer.html"); ?> 
 </footer>
-    <script src="js/records.js"></script>
 </html>

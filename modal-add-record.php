@@ -1,3 +1,5 @@
+<!-- Modal for add record in records pages -->
+
 <div id="modal-add-record" class="modal">
 
             <!-- Modal content -->

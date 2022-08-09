@@ -1,3 +1,5 @@
+// For add-record modal in records pages
+
 // Get the modal
 var modal = document.getElementById("modal-add-record");
 

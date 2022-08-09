@@ -327,25 +327,18 @@ button:hover{
   }
   
   /* Modal Content/Box */
-  .modal-content {
-    position: relative;
-    width: 1069px; /* Could be more or less, depending on screen size */
-    height: 518px;
-    background-color: #F8F8F8;
-    margin: 10% auto; /* 15% from the top and centered */
+  .form-add-record{
+    margin: 10% auto; 
     padding: 63px 35px 0 35px;
-    border: 1px solid #888;
-    border-radius: 10px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  .modal-content h1{
+  .form-add-record h1{
     margin: 0 0 44px;
     font-size: 30px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
   }
-  .modal-content .form-row{
+  .form-add-record .form-row{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -354,38 +347,38 @@ button:hover{
   .form-row:nth-child(2){
     padding-right: 31.5%;
   }
-  .modal-content div{
+  .form-add-record div{
     display: flex;
     flex-direction: column;;
   }
-  .modal-content label{
+  .form-add-record label{
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     margin-bottom: 7px;
   }
-  .modal-content input[type=text]{
+  .form-add-record input[type=text]{
     height: 37px;
     background: #D2D2D2;
     border: 1px solid #C3C0C0;
     border-radius: 5px;
   }
-  .modal-content .left-col{
+  .form-add-record .left-col{
     width: 187px;
   }
-  .modal-content .mid-col{
+  .form-add-record .mid-col{
     width: 319px;
   }
-  .modal-content .right-col{
+  .form-add-record .right-col{
     width: 224px;
   }
-  .modal-content .buttons-cont{
+  .form-add-record .buttons-cont{
     display: flex;
     flex-direction: row;
     width: fit-content;
     margin: auto;
   }
-  .modal-content .buttons-cont > *{
+  .form-add-record .buttons-cont > *{
     width: 177px;
     height: 39px;
     border: none;
@@ -421,8 +414,20 @@ button:hover{
   }
 
 @media screen and (max-width: 678px){
+.sidenav-records .container1 > h1{
+    display: none;
+}
+.sidenav-records .title{
+    margin: 24px 0 45px 10px;
+}
+.title h1{
+    font-size: 20px;
+}
+.sidenav-records h2 {
+    margin: 46px 0 0 21px;
+}
 .sidenav-records .bookings-table{
-    width: 100vw;
+    width: 100%;
     height: fit-content;
 }
 /* FOLDERS */
@@ -474,6 +479,9 @@ button:hover{
     margin-bottom: 83px;
     background: white;
 }
+.record-filter select{
+    width: 100%;
+}
 .records-table{
     margin-bottom: 27px;
     background-color: #F3F3F3;
@@ -483,6 +491,16 @@ button:hover{
     font-size: 16px;
     text-align: start;
     margin: 0
+}
+.records-table.no-res{
+    background-color: white;
+}
+.records-table.no-res h1{
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+.records-table.no-res h4{
+    text-align: center;
 }
 .usertransactions__item + div {
     justify-content: space-between;
@@ -539,5 +557,32 @@ button:hover{
     display: none;
 }.table-pagination.mobile{
     display: flex;
+}
+/* ADD RECORD PAGE */
+.form-add-record{
+    padding: 0 35px 0 35px;
+}
+.form-add-record h1{
+    margin: 0 0 36px;
+}
+.form-add-record .form-row{
+    flex-direction: column;
+    margin: auto;
+}
+.form-add-record .left-col,
+.form-add-record .mid-col,
+.form-add-record .right-col{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form-row:nth-child(2){
+    padding: unset;
+    margin-bottom: 15px;
+}
+.form-add-record .buttons-cont{
+    flex-direction: column;
+}
+.form-add-record .buttons-cont > *{
+    margin: auto auto 10px auto;
 }
 }

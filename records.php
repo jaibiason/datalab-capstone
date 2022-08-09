@@ -52,7 +52,6 @@
                             <select name="" id="">
                                 <option value="">Alphabetical A-Z</option>
                             </select>
-                            <!-- <img src="assets/select arrow.svg" alt=""> -->
                         </div>    
                     </div>
                     <!-- Show Filter -->
@@ -62,20 +61,16 @@
                             <select name="" id="">
                                 <option value="">All</option>
                             </select>
-                            <!-- <img src="assets/select arrow.svg" alt=""> -->
                         </div>    
                     </div>
                 </div>
                 
                 <div class="addrecord-download">
-                    <button id="btn-add-record" class="add-record">Add New Record</button>
+                    <button onclick="window.location.href='records_addRecord.php'" class="add-record">Add New Record</button>
                     <button class="download-records"> 
                         <!-- download.svg -->
                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="22" height="20" fill="#F5F5F5"/>
-                        <rect width="1280" height="1349" transform="translate(-1216 -546)" fill="white"/>
                         <g clip-path="url(#clip0_484_549)">
-                        <path d="M-1038 -20C-1038 -28.2843 -1031.28 -35 -1023 -35H42C50.2843 -35 57 -28.2843 57 -20V592H-1038V-20Z" fill="#F7F7F7"/>
                         <rect x="-10" y="-11" width="41" height="41" rx="4" fill="#00AA07"/>
                         <path d="M11 13V1M11 13L7 9M11 13L15 9M1 15L1.621 17.485C1.72915 17.9177 1.97882 18.3018 2.33033 18.5763C2.68184 18.8508 3.11501 18.9999 3.561 19H18.439C18.885 18.9999 19.3182 18.8508 19.6697 18.5763C20.0212 18.3018 20.2708 17.9177 20.379 17.485L21 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </g>
@@ -88,6 +83,7 @@
                     </button>
                 </div>
             </div>  
+            
             <div class="records-table">
                 <!-- web -->
                 <table class="web">
@@ -115,7 +111,7 @@
                 </table>
 
                 <!-- mobile -->
-                <?php  while($row=mysqli_fetch_assoc($mresult)) { //for($i=0;$i<5;$i++){ ?>
+                <?php  while($row=mysqli_fetch_assoc($mresult)) { ?>
                 <div class="usertransactions__item mobile">
                     <div>
                         <span class="codetext-cont">
@@ -235,8 +231,6 @@
 
         </div>
 
-        <?php require("modal-add-record.php") ?>
-
     </div>
 
     </div>
@@ -244,5 +238,4 @@
 <footer>
     <?php require("footer.html"); ?> 
 </footer>
-    <script src="js/records.js"></script>
 </html>
