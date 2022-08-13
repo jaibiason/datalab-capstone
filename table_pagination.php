@@ -1,3 +1,5 @@
+<!-- Sets the number of records shown -->
+<!-- ERROR: shows extra pages -->
 <?php 
 
     require_once('config.php');

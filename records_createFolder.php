@@ -21,56 +21,27 @@
             <h1> Create New Folder </h1>
         </div>
         
-        <div class="form-temp form-add-record">
+        <div class="form-temp form-create-folder">
 
             <form action="">
                 <div class="form-row">
                     <div>
-                        <label for="code">Code</label>
-                        <input type="text" class="gray" placeholder="<?php echo "B01" ?>">
-                    </div>
-                </div class="form-row">
-
-                <div class="form-row">
-                    <div>
-                        <label for="code">Name</label>
+                        <label for="code">Folder Name</label>
                         <input type="text" placeholder="Enter the name of the folder">
                     </div>
 
                     <div>
-                        <label for="">Status</label>
-                        <div class="select-wrapper">
-                            <select name="" id="">
-                                <option value="">Completing Requirements</option>
-                            </select>
-                        </div>
+                        <label for="name">Created By</label>
+                        <input type="text" class="gray" value="<?php echo "Andres Bonifacio"?>">
                     </div>
                 </div class="form-row">
 
                 <div class="form-row">
-                    <div>
-                        <label for="">Event</label>
-                        <div class="select-wrapper">
-                            <select name="" id="">
-                                <option value="">Baptism</option>
-                                <option value="">Confirmation</option>
-                                <option value="">Wedding</option>
-                            </select>
-                        </div>    
-                    </div>
-
-                    <div>
-                        <label for="eventDate">Event Date</label>
-                        <input type="date">
-                    </div>
-                </div class="form-row">
-
-                <div class="form-row">
-                    <!-- TAGS -->
-                    <div class="full">
-                        <label for="">Tags</label>
+                  <div class="full">
+                        <label for="">Add items with the following tags</label>
                         <div class="select-wrapper full">
                             <select class="full" name="" id="">
+                            <option value="" disabled selected hidden>Baptism, Wedding, Confirmation, etc.</option>
                                 <option value="">Baptism</option>
                                 <option value="">Confirmation</option>
                                 <option value="">Wedding</option>
@@ -80,9 +51,15 @@
                     </div>
                 </div class="form-row">
 
+                <!-- sample tag style (idk pano isample sa loob nung tag field so labas nalang) -->
+                <div class="tag-wrapper">
+                    <p> <?php echo "Baptism" ?> </p>
+                    <a href=""><img src="assets/remove tag.svg" alt=""></a>
+                </div>
+
                 <div class="buttons-cont">
                     <button type="button" onclick="window.history.back()">Cancel</button>
-                    <input type="submit" value="Add">
+                    <input type="submit" value="Create Folder">
                 </div>
         </div>
 

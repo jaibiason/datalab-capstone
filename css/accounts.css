@@ -1,0 +1,43 @@
+.sidenav-accounts{
+    display: flex;
+}
+.sidenav-accounts .container1{
+    width: 100%;
+    padding: 5px;
+}
+.sidenav-accounts .container1 > h1{
+    margin: 33px 0 52px 21px;
+    font-size: 25px;
+}
+.sidenav-accounts .title{
+    display: flex;
+    align-items: center;
+    margin: 33px 0 52px 10px;
+}
+.title h1{
+    margin: 0 0 0 18px;
+    font-size: 25px;
+}
+.sidenav-accounts h2{
+    margin: 0 0 0 21px;
+    font-size: 20px;
+}
+.sidenav-accounts table td{
+    padding: 5px 0;
+}
+.sidenav-accounts .records-table{
+    margin-bottom: 20px;
+}
+
+.btn-acc-edit,
+.btn-delete{
+    width: 41px;
+    height: 41px;
+    border-radius: 4px;
+}
+.btn-acc-edit{
+    background: #104E88;
+}
+.btn-delete{
+    background: #C70000;
+}

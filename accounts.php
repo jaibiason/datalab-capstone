@@ -2,40 +2,19 @@
 <!DOCTYPE html>
 <head>
     <link rel="stylesheet" type="text/css" href="css/global.css">
-    <link rel="stylesheet" type="text/css" href="css/records.css">
+    <link rel="stylesheet" type="text/css" href="css/accounts.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Datalab | Records</title>
-    <?php $page = "records";
+    <title>Datalab | Accounts</title>
+    <?php $page = "accounts";
     require("navbar.php"); ?> 
 </head>
 <body>
-    <div class="sidenav-records">
+    <div class="sidenav-accounts">
     <?php require("sidenav.php"); ?>
     <div class="container1">
-        <h1>Records</h1>
+        <h1>Accounts</h1>
 
-        <div class="view-folder">
-            <h2>View by Folder</h2>
-            <div class="folders-cont">
-                <?php for($i=0;$i<4;$i++){ ?>
-                    <div class="folder-item"> <a href=" <?php echo "records_folder.php" ?> ">
-                        <h3> <?php echo "Baptism Records" ?> </h3>
-                        <p> Created by <?php echo "Jose Rizal" ?> </p>
-                        </a>
-                    </div>
-                <?php } ?>
-                <div class="add-folder"> <a href="records_createFolder.php">
-                    <!-- add.svg -->
-                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M16.779 0.0132222L17 0C17.4627 6.1031e-05 17.9092 0.169917 18.2549 0.477351C18.6007 0.784785 18.8215 1.20841 18.8757 1.66789L18.8889 1.88889V15.1111H32.1111C32.5738 15.1112 33.0203 15.281 33.366 15.5885C33.7118 15.8959 33.9326 16.3195 33.9868 16.779L34 17C33.9999 17.4627 33.8301 17.9092 33.5226 18.2549C33.2152 18.6007 32.7916 18.8215 32.3321 18.8757L32.1111 18.8889H18.8889V32.1111C18.8888 32.5738 18.719 33.0203 18.4115 33.366C18.1041 33.7118 17.6805 33.9326 17.221 33.9868L17 34C16.5373 33.9999 16.0908 33.8301 15.7451 33.5226C15.3993 33.2152 15.1785 32.7916 15.1243 32.3321L15.1111 32.1111V18.8889H1.88889C1.42624 18.8888 0.979697 18.719 0.633964 18.4115C0.288231 18.1041 0.0673524 17.6805 0.0132222 17.221L0 17C6.1031e-05 16.5373 0.169917 16.0908 0.477351 15.7451C0.784785 15.3993 1.20841 15.1785 1.66789 15.1243L1.88889 15.1111H15.1111V1.88889C15.1112 1.42624 15.281 0.979697 15.5885 0.633964C15.8959 0.288231 16.3195 0.0673524 16.779 0.0132222L17 0L16.779 0.0132222Z" fill="#B9B9B9"/>
-                    </svg>
-                </a>
-                </div>
-            </div>
-        </div>
-
-        <h2>View by Full List</h2>
         <div class="bookings-table" id="bookings-table">
             <div class="search-download-cont">
                 <div class="search-sort-show">
@@ -90,21 +69,28 @@
                     <thead>
                         <tr>
                             <th>Name</th>
-                            <th>Contact Number</th>
-                            <th>Event Type</th>
-                            <th>Event Date</th>
+                            <th>Email Address</th>
+                            <th>Role</th>
                             <th>Status</th>
+                            <th> </th>
                         </tr>
                     </thead>
 
                     <tbody>	
                         <?php while($row=mysqli_fetch_assoc($result)) { ?>
                         <tr>
-                            <td> <?php echo $row['name']; ?> </th>
-                            <td> <?php echo $row['num']; ?> </th>
-                            <td> <?php echo $row['event']; ?> </th>
-                            <td> <?php echo $row['date']; ?> </th>
-                            <td> <?php echo $row['status']; ?> </th>
+                            <td> <?php echo $row['name']; ?> </td>
+                            <td> <?php echo $row['num']; ?> </td>
+                            <td> <?php echo $row['event']; ?> </td>
+                            <td> <?php echo $row['status']; ?> </td>
+                            <td> 
+                                <button class="btn-acc-edit">
+                                    <img src="assets/edit.svg" alt="">
+                                </button>
+                                <button class="btn-delete">
+                                    <img src="assets/delete.svg" alt="">
+                                </button>
+                            </td>
                         </tr>
                         <?php } ?>
                     </tbody>

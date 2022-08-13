@@ -12,7 +12,16 @@ div{
     box-sizing: border-box;
 }
 
-form input[type=text]:focus-visible{
+form input[type=text],
+form input[type=date],
+select{
+    padding: 0 10px 0 15px;
+    background: #FFFFFF;
+    border: 1px solid #D9D9D9;
+    border-radius: 7px;
+}
+form input:focus-visible,
+select:focus-visible{
     outline: #F3A452 auto 1px;
 }
 
@@ -28,6 +37,267 @@ thead th, tbody td{
     display: none ;
 }
 
+
+/* SEARCHBAR */
+.searchbar-wrapper{
+    display: flex;
+    flex-direction: row !important;
+    align-items: center;
+    width: 290px;
+    height: 33px;
+    background-color: white;
+    border-radius: 7px;
+    border: 1px solid #D9D9D9;
+    padding-left: 15px;
+}
+.searchbar-wrapper img{
+    /* object-fit: contain; */
+    height: 60%;
+    max-height: 18.5px;
+}
+input[type="search"]{
+    width: 290px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    align-items: center;
+    padding: 0 5px 0 10px;
+    font-size: 15px;
+}
+input[type="search"]:focus-visible{
+    outline: none;
+}
+input[type="search"]::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    height: 1rem;
+    width: 1rem;
+    background-image: url("../assets/xmark.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    opacity: 0.4;
+}
+
+/* SELECT WRAPPER */
+.select-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 154px;
+    height: 33px;
+    border-radius: 7px;
+    border: 1px solid #D9D9D9;
+    background-color: white;
+    background-image: url("../assets/select arrow.svg");
+    background-size: 9%;
+    background-repeat: no-repeat;
+    background-position: 91% 56%;
+}
+select{
+    position: relative;
+    width: 154px;
+    height: 33px;
+    border-radius: 7px;
+    /* border: 1px solid #D9D9D9; */
+    border: none;
+    background: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    /* padding: 0 0 0 10px; */
+}
+
+/* DATE WRAPPER */
+input[type="date" i]::-webkit-calendar-picker-indicator{
+    -webkit-appearance: none;
+    height: 1.5rem;
+    width: 1.5rem;
+    background-image: url("../assets/calendar.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    opacity: 0.4;
+}
+
+/* BUTTON */
+button{   /* maybe move to global css */
+    border-radius: 5px;
+    border: none;
+    color: white;
+    height: 40px;
+    font-size: 14px;
+    cursor: pointer;
+}
+button.add-record{
+    width: 180px;
+    background-color: #F3A452;
+}
+button.download-records{
+    width: 41px;
+    background: #00AA07;
+}
+button:hover{
+    background-color: #131212;
+    transition: .2s ease-in;
+}
+
+/* TAG STYLING */
+.tag-wrapper{
+    display: flex;
+    flex-direction: row !important;
+    height: 31px;
+    width: fit-content;
+    padding: 0 10px;
+    align-items: center;
+    background: rgba(243, 164, 82, 0.85);
+    border: 1px solid #F3A452;
+    border-radius: 6px;
+    color: white;
+}
+.tag-wrapper p{
+    font-size: 14px;
+    margin-right: 8px;
+}
+
+
+
+/* RECORDS TABLE */
+.bookings-table{
+    border-radius: 7px;
+    height: 595px;
+    background: #F6F6F6;
+    margin: auto;
+    margin-bottom: 7px;
+    padding: 15px 0 0;
+}
+.bookings-table .search-download-cont{
+    display: flex;
+    padding: 10px 40px;
+    justify-content: space-between;
+}
+.search-sort-show{
+    width: 735px;
+    display: flex;
+}
+/* SEARCHBAR STYLING: in table */
+.bookings-table form{
+    display: flex;
+    align-items: center;
+    margin-right: 9px;
+}
+.searchbar-wrapper{
+    width: 290px;
+    height: 33px;
+}
+input[type="search"]{
+    width: 290px;
+    height: 30px;
+}
+.addrecord-download{
+    display: flex;
+    width: 229px;
+    justify-content: space-between;
+}
+/* SORT BY: in table */
+.search-download-cont .record-filter{
+    position: relative;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-right: 9px;
+}
+.record-filter h4{
+    font-size: 15px;
+}
+.record-filter .select-wrapper{
+    width: 154px;
+    height: 33px;
+}
+.record-filter select{
+    width: 154px;
+    height: 33px;
+} 
+.record-filter select:focus-visible{
+    outline: none;
+}
+.record-filter .select-wrapper img{
+    position: absolute;
+    right: 7%;
+}
+
+/* TABLE */
+.bookings-table table{
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid #E9E9E9;
+    box-shadow: 4px 4px 4px rgba(233, 233, 233, 0.25);  
+}
+table thead{
+    background-color: #E0E0E0;
+    border-radius: 7px;
+}
+table thead th{
+    text-align: start;
+    padding: 10px 0;
+}
+table tbody{
+    font-size: 14px;
+}
+.bookings-table tbody tr:nth-of-type(odd){
+    background-color: white;
+}
+table tbody tr:nth-of-type(even){
+    background: #F5F5F5;
+}
+table td{
+    padding: 15px 0;
+}
+table tr th:first-child, table tr td:first-child{
+    padding: 0 0 0 40px;
+}
+
+/* TABLE PAGINATION */
+.table-pagination{
+    display: flex;
+    justify-content: center;
+}
+.table-pagination.mobile{
+    display: none;
+}
+.table-pagination div{
+    width: 32px;
+    height: 32px;
+    background: white;
+    border: .0625rem solid #DFE3E8;
+    border-radius: 4px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    margin: 0 5px;
+}
+.table-pagination div:hover,
+.table-pagination div:hover a,
+.table-pagination div:hover path{
+    border-color: #F3A452;
+    color: #F3A452;
+    fill: #F3A452;
+}
+.table-pagination a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+.table-pagination .active,
+.table-pagination .active a{
+    border-color: #F3A452;
+    color: #F3A452;
+    fill: #F3A452;
+    font-weight: 700;
+}
 
 @media screen and (max-width: 678px){
     .web{

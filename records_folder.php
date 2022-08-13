@@ -160,7 +160,7 @@
             ?>
             </div>
 
-            <!-- MOBILE PAGINATION -->
+            <!-- MOBILE PAGINATION error: pages more than records -->
             <div class="table-pagination mobile">
             <?php 
         

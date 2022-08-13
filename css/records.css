@@ -26,6 +26,7 @@
 }
 .title h1{
     margin: 0 0 0 18px;
+    font-size: 25px;
 }
 .sidenav-records h2{
     margin: 0 0 0 21px;
@@ -96,54 +97,26 @@
     width: 735px;
     display: flex;
 }
-/* SEARCHBAR STYLING */
+/* SEARCHBAR STYLING: in table */
 .bookings-table form{
     display: flex;
     align-items: center;
     margin-right: 9px;
 }
-.bookings-table .searchbar-wrapper{
-    display: flex;
-    align-items: center;
+.searchbar-wrapper{
     width: 290px;
     height: 33px;
-    background-color: white;
-    border-radius: 7px;
-    border: 1px solid #D9D9D9;
-    padding-left: 15px;
 }
-.bookings-table .searchbar-wrapper img{
-    /* object-fit: contain; */
-    height: 60%;
-}
-.bookings-table input[type="search"]{
+input[type="search"]{
     width: 290px;
     height: 30px;
-    border-radius: 7px;
-    border: none;
-    align-items: center;
-    padding: 0 5px 0 10px;
-    font-size: 15px;
-}
-.bookings-table input[type="search"]:focus-visible{
-    outline: none;
-}
-.bookings-table input[type="search"]::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-    height: 1rem;
-    width: 1rem;
-    background-image: url("../assets/xmark.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    margin: auto;
-    opacity: 0.4;
 }
 .addrecord-download{
     display: flex;
     width: 229px;
     justify-content: space-between;
 }
-/* SORT BY */
+/* SORT BY: in table */
 .search-download-cont .record-filter{
     position: relative;
     display: flex;
@@ -155,45 +128,13 @@
     font-size: 15px;
 }
 .record-filter .select-wrapper{
-    position: relative;
-    display: flex;
-    align-items: center;
     width: 154px;
     height: 33px;
-    border-radius: 7px;
-    border: 1px solid #D9D9D9;
-    background-color: white;
-    background-image: url("../assets/select arrow.svg");
-    background-size: 9%;
-    background-repeat: no-repeat;
-    background-position: 91% 56%;
 }
 .record-filter select{
-    position: relative;
     width: 154px;
     height: 33px;
-    border-radius: 7px;
-    /* border: 1px solid #D9D9D9; */
-    border: none;
-    background: none;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    padding: 0 0 0 10px;
-}
-/* .record-filter .custom-arrow, .record-filter .select-wrapper::after{
-    content: '';
-    position: absolute;
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    top: 0;
-    right: 0;
-    background-image: url("assets/xmark.svg"); 
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: 1rem;
-} */
+} 
 .record-filter select:focus-visible{
     outline: none;
 }
@@ -202,14 +143,7 @@
     right: 7%;
 }
 /* BUTTON */
-button{   /* maybe move to global css */
-    border-radius: 5px;
-    border: none;
-    color: white;
-    height: 40px;
-    font-size: 14px;
-    cursor: pointer;
-}
+
 button.add-record{
     width: 180px;
     background-color: #F3A452;
@@ -223,36 +157,14 @@ button:hover{
     transition: .2s ease-in;
 }
 /* TABLE STYLING */
-.bookings-table table{
+.bookings-table table,
+.form-download table{
     border-collapse: collapse;
     width: 100%;
     border-radius: 7px;
     overflow: hidden;
     border: 1px solid #E9E9E9;
     box-shadow: 4px 4px 4px rgba(233, 233, 233, 0.25);  
-}
-.bookings-table thead{
-    background-color: #E0E0E0;
-    border-radius: 7px;
-}
-.bookings-table thead th{
-    text-align: start;
-    padding: 10px 0;
-}
-.bookings-table tbody{
-    font-size: 14px;
-}
-.bookings-table tbody tr:nth-of-type(odd){
-    background-color: white;
-}
-.bookings-table tbody tr:nth-of-type(even){
-    background: #F5F5F5;
-}
-.bookings-table td{
-    padding: 15px 0;
-}
-.bookings-table tr th:first-child, .bookings-table tr td:first-child{
-    padding: 0 0 0 40px;
 }
 .records-table{
     height: 415px;
@@ -272,146 +184,102 @@ button:hover{
     display: flex;
     margin: auto;
 }
-/* TABLE PAGINATION */
-.table-pagination{
-    display: flex;
-    justify-content: center;
+
+  /* FORM PAGES: Add Record and Create Folder */
+.form-temp{
+    position: relative;
+    width: 846px;
+    height: fit-content;
+    margin: 84px auto 0 auto;
 }
-.table-pagination.mobile{
-    display: none;
+.form-temp.form-download{ /* download page */
+    height: fit-content;
+    margin: 53px auto 0 auto;
+    padding-bottom: 127px;
 }
-.table-pagination div{
-    width: 32px;
-    height: 32px;
-    background: white;
-    border: .0625rem solid #DFE3E8;
-    border-radius: 4px;
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
-    margin: 0 5px;
-}
-.table-pagination div:hover,
-.table-pagination div:hover a,
-.table-pagination div:hover path{
-    border-color: #F3A452;
-    color: #F3A452;
-    fill: #F3A452;
-}
-.table-pagination a{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-    color: black;
-}
-.table-pagination .active,
-.table-pagination .active a{
-    border-color: #F3A452;
-    color: #F3A452;
-    fill: #F3A452;
-    font-weight: 700;
-}
-/* MODAL OVERLAY*/
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content/Box */
-  .form-add-record{
-    margin: 10% auto; 
-    padding: 63px 35px 0 35px;
-  }
-  .form-add-record h1{
-    margin: 0 0 44px;
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-  }
-  .form-add-record .form-row{
+.form-temp .form-row{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    margin-bottom: 72px;
-  }
-  .form-row:nth-child(2){
-    padding-right: 31.5%;
-  }
-  .form-add-record div{
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+.form-temp div{
     display: flex;
-    flex-direction: column;;
-  }
-  .form-add-record label{
+    flex-direction: column;
+}
+.form-temp label{
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+    font-size: 18px;
     margin-bottom: 7px;
-  }
-  .form-add-record input[type=text]{
-    height: 37px;
-    background: #D2D2D2;
-    border: 1px solid #C3C0C0;
-    border-radius: 5px;
-  }
-  .form-add-record .left-col{
-    width: 187px;
-  }
-  .form-add-record .mid-col{
-    width: 319px;
-  }
-  .form-add-record .right-col{
-    width: 224px;
-  }
-  .form-add-record .buttons-cont{
+}
+.form-temp input[type=text],
+.form-temp input[type=date]{
+    width: 357px;
+    height: 46px;
+    font-size: 16px;
+}
+input[type=text].gray{
+    background: #C3C3C3;
+    border: 1px solid #D9D9D9;
+}
+form .full{
+    width: 100% !important;
+}
+.form-temp .buttons-cont{
     display: flex;
     flex-direction: row;
-    width: fit-content;
-    margin: auto;
-  }
-  .form-add-record .buttons-cont > *{
+    width: 100%;
+    margin-top: 74px;
+    justify-content: center;
+}
+.buttons-cont.bottom{
+    position: absolute;
+    bottom: 0;
+}
+.form-temp .buttons-cont > *{
     width: 177px;
     height: 39px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
     border: none;
     border-radius: 5px;
-  }
-  .buttons-cont button{
+}
+.buttons-cont button{
     background: #E2E1E1;
     color: black;
-    font-weight: 500;
     margin-right: 15px;
-  }
-  .buttons-cont input[type=submit]{
+}
+.buttons-cont input[type=submit]{
     background: #F3A452;
     color: white;
-    font-weight: 500;
     cursor: pointer;
-  }
-  /* The Close Button */
-  .close {
-    position: absolute;
-    top: 3%;
-    right: 3%;
-    color: #aaa;
-    font-size: 28px;
-    font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-  }
+}
+    /* overwrite global .searchbar-wrapper */
+.form-temp .searchbar-wrapper{
+    width: 100%;
+    height: 47px;
+    font-size: 18px;
+}
+  /* overwrite select */
+.form-temp .select-wrapper{
+    width: 357px;
+    height: 47px;
+    background-size: 11px;
+    background-position: right 10px center;
+}
+.form-temp select{
+    width: 357px;
+    height: 47px;
+    font-size: 16px;
+}
+.form-temp.form-create-folder .buttons-cont{
+    margin-top: 256px;
+}
+.form-temp table{
+    margin-top: 7px;
+}
+
 
 @media screen and (max-width: 678px){
 .sidenav-records .container1 > h1{
@@ -431,6 +299,9 @@ button:hover{
     height: fit-content;
 }
 /* FOLDERS */
+.folders-cont{
+    padding: 0;
+}
 .folders-cont .folder-item {
     margin: 13px auto 0 auto;
 }
@@ -584,5 +455,42 @@ button:hover{
 }
 .form-add-record .buttons-cont > *{
     margin: auto auto 10px auto;
+}
+/* FORM PAGES: Add Record and Create Folder */
+.form-temp{
+position: relative;
+width: 100%;
+height: fit-content;
+margin: 57px auto 0 auto;
+padding: 0 37px;
+}
+.form-temp .form-row,
+.form-temp .buttons-cont{
+    flex-direction: column-reverse;
+    margin-bottom: 0;
+}
+.form-temp .form-row > div{
+    margin-bottom: 30px;
+}
+.form-temp .form-row input,
+.form-temp .select-wrapper,
+.form-temp select{
+    width: 100%;
+    font-size: 14px;
+}
+.form-temp.form-create-folder .buttons-cont{
+    margin-top: 111px;
+}
+.form-temp .buttons-cont > *{
+    width: 100%;
+    margin-bottom: 11px;
+}
+.form-download table tr td:first-child {
+    padding: 0 0 0 10px;
+}
+.form-download table th,
+.form-download table td{
+    font-size: 6px;
+    padding: 5px 0;
 }
 }
