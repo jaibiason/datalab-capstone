@@ -1,10 +1,10 @@
-// For add-record modal in records pages
+// For btn-add-record modal in records pages
 
 // Get the modal
-var modal = document.getElementById("modal-add-record");
+var modal = document.getElementById("modal-btn-add-record");
 
 // Get the button that opens the modal
-var btn = document.getElementById("btn-add-record");
+var btn = document.getElementById("btn-btn-add-record");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];

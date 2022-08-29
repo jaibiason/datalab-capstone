@@ -43,8 +43,8 @@
                 </div>
                 
                 <div class="addrecord-download">
-                    <button onclick="window.location.href='records_addRecord.php'" class="add-record">Add New Record</button>
-                    <button class="download-records"> 
+                    <button onclick="window.location.href='records_addRecord.php'" class="btn-add-record">Add New Record</button>
+                    <button class="btn-dl-records"> 
                         <!-- download.svg -->
                         <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_484_549)">

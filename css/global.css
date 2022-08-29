@@ -128,11 +128,11 @@ button{   /* maybe move to global css */
     font-size: 14px;
     cursor: pointer;
 }
-button.add-record{
+button.btn-add-record{
     width: 180px;
     background-color: #F3A452;
 }
-button.download-records{
+button.btn-dl-records{
     width: 41px;
     background: #00AA07;
 }
@@ -153,6 +153,7 @@ button:hover{
     border: 1px solid #F3A452;
     border-radius: 6px;
     color: white;
+    justify-content: space-between;
 }
 .tag-wrapper p{
     font-size: 14px;
@@ -226,7 +227,8 @@ input[type="search"]{
 }
 
 /* TABLE */
-.bookings-table table{
+.bookings-table table,
+.form-download table{
     border-collapse: collapse;
     width: 100%;
     border-radius: 7px;
@@ -256,6 +258,39 @@ table td{
 }
 table tr th:first-child, table tr td:first-child{
     padding: 0 0 0 40px;
+}
+        /* buttons */
+.btn-acc-edit,
+.btn-delete{
+    width: 41px;
+    height: 41px;
+    border-radius: 4px;
+}
+.btn-acc-edit{
+    background: #104E88;
+}
+.btn-delete{
+    background: #C70000 !important;
+}
+/* TABLE STYLING */
+.records-table{
+    /* height: 415px; */
+    height: fit-content;
+    margin-bottom: 43px;
+}
+.records-table h1{
+    text-align: center;
+    margin: 60px auto 0 auto;
+}
+.records-table h4{
+    width: 707px;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px auto 0 auto;
+}
+.records-table img{
+    display: flex;
+    margin: auto;
 }
 
 /* TABLE PAGINATION */
@@ -299,11 +334,267 @@ table tr th:first-child, table tr td:first-child{
     font-weight: 700;
 }
 
+
+/* FORM PAGES: Add Record and Create Folder */
+.form-temp{
+    position: relative;
+    width: 846px;
+    height: fit-content;
+    margin: 84px auto 0 auto;
+}
+.form-temp.form-download{ /* download page */
+    height: fit-content;
+    margin: 53px auto 0 auto;
+    padding-bottom: 127px;
+}
+.form-temp .form-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 34px;
+}
+.form-temp div{
+    display: flex;
+    flex-direction: column;
+}
+.form-temp label{
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    margin-bottom: 7px;
+}
+.form-temp input[type=text],
+.form-temp input[type=date]{
+    width: 357px;
+    height: 46px;
+    font-size: 16px;
+}
+input[type=text].gray,
+.form-temp .gray{
+    background: #C3C3C3;
+    border: 1px solid #D9D9D9;
+}
+form .full{
+    width: 100% !important;
+}
+.form-temp .buttons-cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 74px;
+    justify-content: center;
+}
+.buttons-cont.bottom{
+    position: absolute;
+    bottom: 0;
+}
+.form-temp .buttons-cont > *{
+    width: 177px;
+    height: 39px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+}
+.buttons-cont button{
+    background: #E2E1E1;
+    color: black;
+    margin-right: 15px;
+}
+.buttons-cont input[type=submit]{
+    background: #F3A452;
+    color: white;
+    cursor: pointer;
+}
+/* overwrite global .searchbar-wrapper */
+.form-temp .searchbar-wrapper{
+    width: 100%;
+    height: 47px;
+    font-size: 18px;
+}
+/* overwrite select */
+.form-temp .select-wrapper{
+    width: 357px;
+    height: 47px;
+    background-size: 11px;
+    background-position: right 10px center;
+}
+.form-temp select{
+    width: 357px;
+    height: 47px;
+    font-size: 16px;
+}
+.form-temp.form-create-folder .buttons-cont{
+    margin-top: 256px;
+}
+.form-temp table{
+    margin-top: 7px;
+}
+
 @media screen and (max-width: 678px){
     .web{
         display: none;
     }
     .mobile{
         display: unset ;
+    }
+    .tag-wrapper{
+        width: 100%;
+        height: 33px;
+    }
+
+    /* SEARCH & FILTERS */
+    .bookings-table .search-download-cont{
+        padding: 10px 11px;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .bookings-table .searchbar-wrapper{
+        width: 100%;
+        height: 43px;
+    }
+    .search-sort-show{
+        width: 100%;
+        flex-direction: column;
+    }
+    .search-download-cont .record-filter{
+        flex-direction: column;
+    }
+    .record-filter .select-wrapper{
+        width: 100%;
+        height: 43px;
+        background-size: 4%;
+        background-position: 97% 56%;
+    }
+    .record-filter h4{
+        margin-bottom: 10px;
+    }
+    .bookings-table .searchbar-wrapper,
+    .bookings-table .select-wrapper{
+        margin-bottom: 25px;
+    }
+    .addrecord-download{
+        width: 100%;
+        padding-right: 9px;
+    }
+    /* TABLE */
+    .bookings-table , .records-table{
+        height: fit-content;
+    }
+    .bookings-table{
+        margin-bottom: 83px;
+        background: white;
+    }
+    .record-filter select{
+        width: 100%;
+    }
+    .records-table{
+        margin-bottom: 27px;
+        background-color: #F3F3F3;
+    }
+    .records-table h4 {
+        width: fit-content;
+        font-size: 16px;
+        text-align: start;
+        margin: 0
+    }
+    .records-table.no-res{
+        background-color: white;
+    }
+    .records-table.no-res h1{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .records-table.no-res h4{
+        text-align: center;
+    }
+    .usertransactions__item + div {
+        justify-content: space-between;
+    }
+    .usertransactions__item .mobile{
+        margin: 10px 0;
+    }
+    .records-table
+    .usertransactions__item > div{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #E9E9E9;
+        padding: 12px 14px;
+        background: white;
+    }
+    .usertransactions__item div > *{
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .records-table div:first-child{
+        margin-top: 27px;
+        border-top: 1px solid #E9E9E9;
+        justify-content: space-between;
+    }
+    .records-table div h3{
+        width: 96px;
+    }
+    .records-table > span{
+        text-align: end;
+    }
+    .codetext-cont{
+        display: flex;
+        align-items: center;
+    }
+    .codetext-cont > *{
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem !important;
+    } 
+    .usertransactions__item  .new {
+        display: flex;
+        width: 45px;
+        height: 17px;
+        font-size: 9px;
+        color: white;
+        background: #F3A452;
+        border-radius: 4px;
+        justify-content: center;
+        align-items: center;
+    }
+    .new.hidden{
+        display: none;
+    }
+    .table-pagination.web{
+        display: none;
+    }.table-pagination.mobile{
+        display: flex;
+    }
+
+    /* FORM PAGES: Add Record and Create Folder */
+    .form-temp{
+    position: relative;
+    width: 100% !important;
+    height: fit-content;
+    margin: 57px auto 0 auto;
+    padding: 0 37px;
+    }
+    .form-temp .form-row{
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+    .form-temp .buttons-cont{
+        flex-direction: column-reverse;
+        margin-bottom: 0;
+    }
+    .form-temp .form-row > div{
+        margin-bottom: 30px;
+    }
+    .form-temp .form-row input,
+    .form-temp .select-wrapper,
+    .form-temp select{
+        width: 100%;
+        font-size: 14px;
+    }
+    .form-temp.form-create-folder .buttons-cont{
+        margin-top: 111px;
+    }
+    .form-temp .buttons-cont > *{
+        width: 100%;
+        margin-bottom: 11px;
     }
 }

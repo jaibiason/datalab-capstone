@@ -114,7 +114,7 @@
                     </div>
                 </div>
             <?php } ?>
-            <span> <a href="">view more</a> </span>
+            <span> <a href="records.php">view more</a> </span>
         </div>
     </div>
     <div class="container2">

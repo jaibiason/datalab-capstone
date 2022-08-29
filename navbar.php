@@ -183,38 +183,38 @@
                 <ul class="nav mobile">
                     <li class="navlink <?php if ($page == "profile") {echo "active-page";} ?>"><a href="#">Profile</a></li>
                     <li class="navlink <?php if ($page == "notification") {echo "active-page";} ?>"><a href="#">Notifications</a></li>
-                    <li class="navlink <?php if ($page == "logout") {echo "active-page";} ?>"><a href="#">Logout</a></li>
-                    <li class="navlink <?php if ($page == "dashboard") {echo "active-page";} ?>"><a href="#">Dashboard
+                    <li class="navlink <?php if ($page == "logout") {echo "active-page";} ?>"><a href="logout.php">Logout</a></li>
+                    <li class="navlink <?php if ($page == "dashboard") {echo "active-page";} ?>"><a href="dashboard.php">Dashboard
                         <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14 0.5L12.57 1.893L20.15 9.5H0V11.5H20.15L12.57 19.073L14 20.5L24 10.5L14 0.5Z" fill="white"/>
                         </svg>
                     </a></li>
-                    <li class="navlink <?php if ($page == "bookings") {echo "active-page";} ?>" ><a href="#">Bookings
+                    <li class="navlink <?php if ($page == "bookings") {echo "active-page";} ?>" ><a href="bookings.php">Bookings
                         <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 0.5L12.57 1.893L20.15 9.5H0V11.5H20.15L12.57 19.073L14 20.5L24 10.5L14 0.5Z" fill="white"/>
                         </svg>
                     </a></li>
-                    <li class="navlink <?php if ($page == "calendar") {echo "active-page";} ?>"><a href="#">Calendar
+                    <li class="navlink <?php if ($page == "calendar") {echo "active-page";} ?>"><a href="calendar.php">Calendar
                         <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 0.5L12.57 1.893L20.15 9.5H0V11.5H20.15L12.57 19.073L14 20.5L24 10.5L14 0.5Z" fill="white"/>
                         </svg>
                     </a></li>
-                    <li class="navlink <?php if ($page == "records") {echo "active-page";} ?>"><a href="#">Records
+                    <li class="navlink <?php if ($page == "records") {echo "active-page";} ?>"><a href="records.php">Records
                         <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 0.5L12.57 1.893L20.15 9.5H0V11.5H20.15L12.57 19.073L14 20.5L24 10.5L14 0.5Z" fill="white"/>
                         </svg>
                     </a></li>
-                    <li class="navlink <?php if ($page == "finances") {echo "active-page";} ?>" ><a href="#">Finances
+                    <li class="navlink <?php if ($page == "finances") {echo "active-page";} ?>" ><a href="finances.php">Finances
                         <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 0.5L12.57 1.893L20.15 9.5H0V11.5H20.15L12.57 19.073L14 20.5L24 10.5L14 0.5Z" fill="white"/>
                         </svg>
                     </a></li>
-                    <li class="navlink <?php if ($page == "accounts") {echo "active-page";} ?>" ><a href="#">Accounts
+                    <li class="navlink <?php if ($page == "accounts") {echo "active-page";} ?>" ><a href="accounts.php">Accounts
                         <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 0.5L12.57 1.893L20.15 9.5H0V11.5H20.15L12.57 19.073L14 20.5L24 10.5L14 0.5Z" fill="white"/>
                         </svg>
                     </a></li>
-                    <li class="navlink <?php if ($page == "settings") {echo "active-page";} ?>"><a href="#">Settings
+                    <li class="navlink <?php if ($page == "settings") {echo "active-page";} ?>"><a href="settings.php">Settings
                         <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M14 0.5L12.57 1.893L20.15 9.5H0V11.5H20.15L12.57 19.073L14 20.5L24 10.5L14 0.5Z" fill="white"/>
                         </svg>

@@ -14,13 +14,27 @@
     align-items: center;
     margin: 33px 0 52px 10px;
 }
+.title.flex-col{    /* verify user page */
+    flex-direction: column;
+    align-items: unset;
+}
 .title h1{
     margin: 0 0 0 18px;
     font-size: 25px;
 }
+.title p{
+    font-size: 15px;
+    margin: 14px 0 0 40px;
+}
+.title span{    /* verify user page */
+    display: flex;
+}
 .sidenav-accounts h2{
     margin: 0 0 0 21px;
     font-size: 20px;
+}
+.form-temp.form-verify-user{
+    width: 512px;
 }
 .sidenav-accounts table td{
     padding: 5px 0;
@@ -28,16 +42,19 @@
 .sidenav-accounts .records-table{
     margin-bottom: 20px;
 }
+.btn-add-user{
+    width: 100%;
+    background-color: #F3A452;
+}
 
-.btn-acc-edit,
-.btn-delete{
-    width: 41px;
-    height: 41px;
-    border-radius: 4px;
-}
-.btn-acc-edit{
-    background: #104E88;
-}
-.btn-delete{
-    background: #C70000;
+
+@media screen and (max-width: 678px){
+    .sidenav-accounts .container1 > h1 {
+        margin: 46px 0 0 21px;
+        font-size: 20px;
+    }
+    .btn-add-user{
+        width: 177px;
+        margin: auto;
+    }
 }

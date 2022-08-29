@@ -45,20 +45,7 @@
                 </div>
                 
                 <div class="addrecord-download">
-                    <button onclick="window.location.href='records_addRecord.php'" class="add-record">Add New Record</button>
-                    <button class="download-records"> 
-                        <!-- download.svg -->
-                        <svg width="22" height="20" viewBox="0 0 22 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g clip-path="url(#clip0_484_549)">
-                        <rect x="-10" y="-11" width="41" height="41" rx="4" fill="#00AA07"/>
-                        <path d="M11 13V1M11 13L7 9M11 13L15 9M1 15L1.621 17.485C1.72915 17.9177 1.97882 18.3018 2.33033 18.5763C2.68184 18.8508 3.11501 18.9999 3.561 19H18.439C18.885 18.9999 19.3182 18.8508 19.6697 18.5763C20.0212 18.3018 20.2708 17.9177 20.379 17.485L21 15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        </g>
-                        <defs>
-                        <clipPath id="clip0_484_549">
-                        <path d="M-1038 -20C-1038 -28.2843 -1031.28 -35 -1023 -35H42C50.2843 -35 57 -28.2843 57 -20V592H-1038V-20Z" fill="white"/>
-                        </clipPath>
-                        </defs>
-                        </svg>
+                    <button onclick="window.location.href='accounts_addUser.php'" class="btn-add-user">Add New User</button>
                     </button>
                 </div>
             </div>  
