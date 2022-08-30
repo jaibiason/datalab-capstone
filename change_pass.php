@@ -3,10 +3,11 @@
     <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/signIn.css">
     <title>Change Password</title>
-    <?php require("side_grad.html"); ?> 
+    
 </head>
 <body>
     <section>
+    <?php require("side_grad.html"); ?> 
     <div class="container1">
         <h1>Change Your Password</h1>
         <form action="">

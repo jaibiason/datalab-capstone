@@ -120,12 +120,15 @@ input[type="date" i]::-webkit-calendar-picker-indicator{
 }
 
 /* BUTTON */
-button{   /* maybe move to global css */
+button{  
     border-radius: 5px;
     border: none;
     color: white;
     height: 40px;
     font-size: 14px;
+}
+button,
+input[type=submit]{
     cursor: pointer;
 }
 button.btn-add-record{
@@ -136,7 +139,8 @@ button.btn-dl-records{
     width: 41px;
     background: #00AA07;
 }
-button:hover{
+button.hover:hover,
+input[type=submit].hover:hover{
     background-color: #131212;
     transition: .2s ease-in;
 }

@@ -7,6 +7,9 @@
     <?php require("side_grad.html"); ?> 
 
     <style>
+        .container1{
+            margin: auto;
+        }
         .cont_textwrap{
             width: 524px;
             font-size: 24px;
