@@ -160,16 +160,16 @@
 .bookings-table table{
     table-layout: fixed;
 }
-.bookings-table thead th:nth-child(1) {
+.view-userRecords .bookings-table thead th:nth-child(1) {
     width: 15%;
 }
-.bookings-table thead th:nth-child(2) {
+.view-userRecords .bookings-table thead th:nth-child(2) {
     width: 30%;
 }
-.bookings-table thead th:nth-child(3) {
+.view-userRecords .bookings-table thead th:nth-child(3) {
     width: 10%;
 }
-.bookings-table thead th:nth-child(4) {
+.view-userRecords .bookings-table thead th:nth-child(4) {
     width: 35%;
 }
         /* search + filters */
@@ -242,6 +242,7 @@
 .activities-cont > div,
 .files-cont > div{
     display: flex;
+    align-items: center   ;
     padding: 20px;
     font-family: 'Roboto', sans-serif;
 }
@@ -259,7 +260,25 @@
     font-weight: 400;
     margin-right: 0;
 }
-
+/* User Files */
+.files-cont div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.files-cont .text img{
+    margin-right: 11px;
+}
+.files-cont .text a{
+    font-size: 15px;
+    text-decoration: unset;
+}
+.btn-view-file{
+    width: 41px;
+    background: #F3A452;
+    border-radius: 4px;
+    margin-right: 5px;
+}
 
 @media screen and (max-width: 678px){
 .sidenav-records .container1 > h1{

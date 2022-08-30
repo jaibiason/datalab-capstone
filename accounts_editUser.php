@@ -50,7 +50,7 @@
 
                 <div class="buttons-cont">
                     <button type="button" onclick="window.history.back()">Cancel</button>
-                    <input type="submit" value="Save Changes">
+                    <input type="submit" class="hover" value="Save Changes">
                 </div>
         </div>
 

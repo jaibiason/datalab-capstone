@@ -45,7 +45,7 @@
                 </div>
                 
                 <div class="addrecord-download">
-                    <button onclick="window.location.href='accounts_addUser.php'" class="btn-add-user">Add New User</button>
+                    <button onclick="window.location.href='accounts_addUser.php'" class="btn-add-user hover">Add New User</button>
                     </button>
                 </div>
             </div>  

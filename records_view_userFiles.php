@@ -49,8 +49,11 @@
                 <div class="files-cont">
                     <?php for($i=0;$i<10;$i++){ ?>
                     <div>
-                        <img src="assets/file.svg" alt="">
-                        <a href=""><p> <?php echo "proof_payment_parish_church.png" ?> </p></a>
+                        <div class="text">
+                            <img src="assets/file.svg" alt="">
+                            <a href=""><p> <?php echo "proof_payment_parish_church.png" ?> </p></a>
+                        </div>
+                        
                         <div class="buttons">
                             <button class="btn-view-file">
                                 <img src="assets/edit.svg" alt="">
