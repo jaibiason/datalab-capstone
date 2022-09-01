@@ -260,6 +260,10 @@
     font-weight: 400;
     margin-right: 0;
 }
+.pagination-cont{
+    background-color: white !important;
+    justify-content: center !important;
+}
 /* User Files */
 .files-cont div{
     display: flex;
@@ -278,6 +282,11 @@
     background: #F3A452;
     border-radius: 4px;
     margin-right: 5px;
+}
+
+/* TABS */
+.tabcontent{
+    display: none;
 }
 
 @media screen and (max-width: 678px){
@@ -318,4 +327,14 @@
     font-size: 6px;
     padding: 5px 0;
 }
+}
+
+
+@media screen and (max-width: 678px){
+    .user-table-details{
+        flex-direction: column-reverse;
+    }
+    .tabcontent{
+        display: block !important;
+    }
 }
