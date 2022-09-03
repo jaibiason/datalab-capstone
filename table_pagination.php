@@ -1,4 +1,5 @@
 <!-- Sets the number of records shown -->
+<!-- used in pages under records + accounts + wip? -->
 <!-- ERROR: shows extra pages -->
 <?php 
 
