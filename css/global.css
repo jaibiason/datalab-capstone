@@ -437,7 +437,7 @@ form .full{
 
 @media screen and (max-width: 678px){
     .web{
-        display: none;
+        display: none !important;
     }
     .mobile{
         display: unset ;
