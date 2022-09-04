@@ -24,6 +24,11 @@ form input:focus-visible,
 select:focus-visible{
     outline: #F3A452 auto 1px;
 }
+select:invalid{
+    color: #757575;
+}option{
+    color: black;
+}
 
 a{
     text-decoration: none;
@@ -469,7 +474,7 @@ form .full{
     font-size: 16px;
 }
 .form-temp.form-create-folder .buttons-cont{
-    margin-top: 256px;
+    margin-top: 200px;
 }
 .form-temp table{
     margin-top: 7px;

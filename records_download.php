@@ -66,17 +66,24 @@
 
                 <div class="form-row">
                   <div class="full">
-                        <label for="">Tags</label>
+                        <label for="">Download items with following tags</label>
                         <div class="select-wrapper full">
-                            <select class="full" name="" id="">
+                            <select required class="full" name="" id="">
+                            <option value="" disabled selected hidden>Baptism, Wedding, Confirmation, etc.</option>
                                 <option value="">Baptism</option>
                                 <option value="">Confirmation</option>
                                 <option value="">Wedding</option>
                                 <option value="">Funeral</option>
                             </select>
                         </div>    
-                    </div>
+                    </div> 
                 </div class="form-row">
+                
+                <!-- sample tag style (idk pano isample sa loob nung tag field so labas nalang) -->
+                <div class="tag-wrapper">
+                    <p> <?php echo "Baptism" ?> </p>
+                    <a href=""><img src="assets/remove tag.svg" alt=""></a>
+                </div>
 
                 <label for="prev">Preview</label>
                 <table>

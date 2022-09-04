@@ -363,11 +363,19 @@
     flex-basis: 50%;
 }.activities-cont > div p:last-of-type{ 
     flex-basis: 100%; 
+    margin-top: 15px;
 }
 .files-cont div{
     flex-wrap: wrap;
 }
 .files-cont .buttons{ 
     margin: 15px 0 0 auto;
+}
+/* Bottom Navbar */
+.dashboard-bottom-nav.mobile{
+    justify-content: center;
+}
+.dashboard-bottom-nav a{
+    padding: 0 2.3rem;
 }
 }

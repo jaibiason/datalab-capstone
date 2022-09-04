@@ -31,6 +31,14 @@
                     </div>
 
                     <div>
+                        <label for="code">Email Address</label>
+                        <input type="text">
+                    </div>
+
+                </div class="form-row">
+
+                <div class="form-row">
+                    <div>
                         <label for="role">Role</label>
                             <div class="select-wrapper">
                                 <select name="role" id="">
@@ -38,14 +46,7 @@
                                     <option value="">Customer</option>
                                 </select>
                         </div>  
-                    </div>
-                </div class="form-row">
-
-                <div class="form-row">
-                    <div>
-                        <label for="code">Email Address</label>
-                        <input type="text">
-                    </div>
+                    </div>                    
                 </div class="form-row">
 
                 <div class="buttons-cont">
