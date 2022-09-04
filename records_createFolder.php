@@ -32,7 +32,7 @@
 
                     <div>
                         <label for="name">Created By</label>
-                        <input type="text" class="gray" value="<?php echo "Andres Bonifacio"?>">
+                        <input type="text" disabled class="gray" value="<?php echo "Andres Bonifacio"?>">
                     </div>
                 </div class="form-row">
 
@@ -40,7 +40,7 @@
                   <div class="full">
                         <label for="">Add items with the following tags</label>
                         <div class="select-wrapper full">
-                            <select class="full" name="" id="">
+                            <select required class="full" name="" id="">
                             <option value="" disabled selected hidden>Baptism, Wedding, Confirmation, etc.</option>
                                 <option value="">Baptism</option>
                                 <option value="">Confirmation</option>

@@ -45,6 +45,7 @@
 
         <div class="usertransactions no-scrollbar" id="transactions">
             <table class="web">
+                <!-- sticky table header -->
                 <thead>
                     <tr>
                         <th>Code</th>

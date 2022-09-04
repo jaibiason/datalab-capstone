@@ -42,6 +42,9 @@
 .sidenav-accounts .records-table{
     margin-bottom: 20px;
 }
+.sidenav-accounts table.web .btn-acc-edit{
+    margin-right: 18px;
+}
 .sidenav-accounts .buttons{
     width: fit-content;
     margin-left: auto;
