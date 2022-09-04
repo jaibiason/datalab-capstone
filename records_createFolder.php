@@ -59,7 +59,7 @@
 
                 <div class="buttons-cont">
                     <button type="button" onclick="window.history.back()">Cancel</button>
-                    <input type="submit" class="hover" value="Create Folder">
+                    <input type="submit" class="btn-primary" value="Create Folder">
                 </div>
         </div>
 

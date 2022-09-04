@@ -133,6 +133,7 @@
     width: 100%;
     padding: 0 2rem;
     color: white;
+    cursor: pointer;
 }
 .view-user-nav a.active{
     background-color: white;
@@ -183,7 +184,7 @@
 .bookings-activities-files .searchbar-wrapper{
     width: 296px;
 }
-.bookings-activities-files .bookings-table h4{
+.bookings-activities-files .bookings-table > h4{
     font-size: 14px;
     font-weight: 700;
 }
@@ -198,18 +199,7 @@
     padding: 15px 0;
 }
 .bookings-activities-files .new::after{
-    content: 'New';
-    position: absolute;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     right: -12px;
-    width: 32px;
-    height: 17px;
-    background: #F3A452;
-    border-radius: 4px;
-    font-size: 9px;
-    color: white;
 }
 /* user details */
 .user-cont{
@@ -279,9 +269,11 @@
 }
 .btn-view-file{
     width: 41px;
-    background: #F3A452;
+    background-color: #F3A452;
     border-radius: 4px;
     margin-right: 5px;
+}.btn-view-file:hover{
+    background-color: #95530E;
 }
 
 /* TABS */
@@ -306,6 +298,9 @@
     width: 100%;
     height: fit-content;
 }
+/* .bookings-activities-files .new::after{
+    display: none !important;
+} */
 /* FOLDERS */
 .folders-cont{
     padding: 0;
@@ -327,14 +322,52 @@
     font-size: 6px;
     padding: 5px 0;
 }
+
+/* VIEW USER */
+.user-table-details{
+    flex-direction: column-reverse;
 }
-
-
-@media screen and (max-width: 678px){
-    .user-table-details{
-        flex-direction: column-reverse;
-    }
-    .tabcontent{
-        display: block !important;
-    }
+.user-cont{
+    border: none;
+}
+.tabcontent{
+    display: block !important;
+}
+.view-userRecords .title{
+    height: fit-content;
+    margin: 24px 0 0 0;
+    padding: 0 10px 15px 23px;
+    align-items: unset;
+    flex-wrap: wrap;
+}
+.view-userRecords .title .user{
+    margin: 10px 0;
+}
+.view-userRecords .title .buttons{
+    margin-left: auto;
+}
+.view-userRecords .search-download-cont{
+    display: none;
+}
+.bookings-activities-files .new::after {
+    right: 6%;
+}
+.view-userRecords .table-pagination.mobile{
+    margin-bottom: 27px;
+}
+.activities-cont > div{
+    flex-flow: row wrap;
+}
+.activities-cont > div p{
+    margin: 0;
+    flex-basis: 50%;
+}.activities-cont > div p:last-of-type{ 
+    flex-basis: 100%; 
+}
+.files-cont div{
+    flex-wrap: wrap;
+}
+.files-cont .buttons{ 
+    margin: 15px 0 0 auto;
+}
 }

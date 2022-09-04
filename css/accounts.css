@@ -42,6 +42,10 @@
 .sidenav-accounts .records-table{
     margin-bottom: 20px;
 }
+.sidenav-accounts .buttons{
+    width: fit-content;
+    margin-left: auto;
+}
 .btn-add-user{
     width: 100%;
     background-color: #F3A452;

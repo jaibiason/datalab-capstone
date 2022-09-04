@@ -105,7 +105,7 @@
 
                 <div class="buttons-cont">
                     <button type="button" onclick="window.history.back()">Cancel</button>
-                    <input type="submit" class="hover" value="Download">
+                    <input type="submit" class="btn-primary" value="Download">
                 </div>
         </div>
 

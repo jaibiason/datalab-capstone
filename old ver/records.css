@@ -402,14 +402,7 @@ form .full{
 .records-table > span{
     text-align: end;
 }
-.codetext-cont{
-    display: flex;
-    align-items: center;
-}
-.codetext-cont > *{
-    font-family: 'Roboto', sans-serif;
-    font-size: 1rem !important;
-} 
+
 .usertransactions__item  .new {
     display: flex;
     width: 45px;

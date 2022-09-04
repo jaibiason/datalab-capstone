@@ -50,7 +50,7 @@
 
                 <div class="buttons-cont">
                     <button type="button" onclick="window.history.back()">Cancel</button>
-                    <input class="btn-delete" type="submit" value="Delete User">
+                    <input class="btn-primary" type="submit" value="Creat User">
                 </div>
         </div>
 

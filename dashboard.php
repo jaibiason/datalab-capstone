@@ -28,7 +28,7 @@
                 <h3><a href="">view more</a></h3>
             </div>
 
-            <div class="reminders" id="reminder">
+            <div class="reminders no-scrollbar" id="reminder">
                 <h2> <?php echo "Reminder" ?> </h2>
                 <?php for($i=0;$i<3;$i++){ ?>
                 <div class="reminders__item">
@@ -43,12 +43,12 @@
             </div>
         </div>
 
-        <div class="usertransactions" id="transactions">
+        <div class="usertransactions no-scrollbar" id="transactions">
             <table class="web">
                 <thead>
                     <tr>
                         <th>Code</th>
-                        <th></th>
+                        <!-- <th></th> -->
                         <th>Name</th>
                         <th>Event</th>
                         <th>Event Date</th>
@@ -60,10 +60,10 @@
                     <!-- loop to show new transactions -->
                     <?php for($i=0;$i<2;$i++){ ?>
                     <tr>
-                        <td> <?php echo "BIN-01"; ?> </td>
-                        <td>
-                            <div class="new"> NEW </div>
-                        </td>
+                        <td class="new"> <?php echo "BIN-01"; ?> </td>
+                        <!-- <td>
+                            <div class="new"><p> NEW </p></div>
+                        </td> -->
                         <td> <?php echo "Jose Protacio Rizal"; ?> </td>
                         <td> <?php echo "Baptism"; ?> </td>
                         <td> <?php echo "March 17,2023"; ?> </td>
@@ -74,9 +74,6 @@
                     <?php for($i=0;$i<5;$i++){ ?>
                     <tr>
                         <td> <?php echo "BIN-01"; ?> </td>
-                        <td>
-                            <div class="new hidden"> NEW </div>
-                        </td>
                         <td> <?php echo "Jose Protacio Rizal"; ?> </td>
                         <td> <?php echo "Baptism"; ?> </td>
                         <td> <?php echo "March 17,2023"; ?> </td>
@@ -89,12 +86,9 @@
             <!-- mobile -->
             <?php for($i=0;$i<3;$i++){ ?>
                 <div class="usertransactions__item mobile">
-                    <div>
-                        <span class="codetext-cont">
-                            <h3>Code </h3>
-                            <h4> <?php echo "BIN-01" ?> </h4>
-                        </span>
-                        <div class="new hidden">NEW</div>
+                    <div class="new">
+                        <h3>Code </h3>
+                        <h4 > <?php echo "BIN-01" ?> </h4>
                     </div>
                     <div>
                         <h3>Name </h3>
