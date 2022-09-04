@@ -97,7 +97,7 @@
 
                             <tbody>	
                                 <?php while($row=mysqli_fetch_assoc($result)) { ?>
-                                <tr>
+                                <tr onclick=" window.location.href='#' ">
                                     <!-- .new makes the new badge visible -->
                                     <td class="new"> BIN-<?php echo $row['id']; ?> </th>
                                     <td> <?php echo $row['event']; ?> </th>
@@ -111,12 +111,9 @@
                         <!-- mobile -->
                         <?php  while($row=mysqli_fetch_assoc($mresult)) { ?>
                         <div class="usertransactions__item mobile">
-                            <div>
-                                <span class="codetext-cont">
-                                    <h3>Code </h3>
-                                    <h4> <?php echo "BIN-". $row['id'] ?> </h4>
-                                </span>
-                                <div class="new hidden">NEW</div>
+                            <div class="new">
+                                <h3>Code </h3>
+                                <h4> <?php echo "BIN-". $row['id'] ?> </h4>
                             </div>
                             <div>
                                 <h3>Name </h3>
@@ -483,5 +480,14 @@
 <footer>
     <?php require("footer.html"); ?> 
 </footer>
+
+    <div class="dashboard-bottom-nav mobile">
+        <div>
+            <a id="nav-bookings" class="" href="#Bookings">Bookings</a>
+            <a id="nav-activities" href="#Activities"> Activities </a>
+            <a id="nav-files" href="#Files">Files</a>
+        </div>
+    </div>
+
 <script src="js/view_userTabs.js"></script>
 </html>

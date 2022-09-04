@@ -45,7 +45,7 @@
                 </div>
                 
                 <div class="addrecord-download">
-                    <button onclick="window.location.href='accounts_addUser.php'" class="btn-add-user hover">Add New User</button>
+                    <button onclick="window.location.href='accounts_addUser.php'" class="btn-add-user btn-primary">Add New User</button>
                     </button>
                 </div>
             </div>  
@@ -65,18 +65,20 @@
 
                     <tbody>	
                         <?php while($row=mysqli_fetch_assoc($result)) { ?>
-                        <tr>
+                        <tr onclick=" window.location.href='#' ">
                             <td> <?php echo $row['name']; ?> </td>
                             <td> <?php echo $row['num']; ?> </td>
                             <td> <?php echo $row['event']; ?> </td>
                             <td> <?php echo $row['status']; ?> </td>
                             <td> 
-                                <button class="btn-acc-edit">
-                                    <img src="assets/edit.svg" alt="">
-                                </button>
-                                <button class="btn-delete">
-                                    <img src="assets/delete.svg" alt="">
-                                </button>
+                                <div class="buttons">
+                                    <button class="btn-acc-edit">
+                                        <img src="assets/edit.svg" alt="">
+                                    </button>
+                                    <button class="btn-delete">
+                                        <img src="assets/delete.svg" alt="">
+                                    </button>
+                                </div>
                             </td>
                         </tr>
                         <?php } ?>
@@ -87,27 +89,30 @@
                 <?php  while($row=mysqli_fetch_assoc($mresult)) { ?>
                 <div class="usertransactions__item mobile">
                     <div>
-                        <span class="codetext-cont">
-                            <h3>Code </h3>
-                            <h4> <?php echo "BIN-". $row['id'] ?> </h4>
-                        </span>
-                        <div class="new hidden">NEW</div>
-                    </div>
-                    <div>
                         <h3>Name </h3>
                         <h4> <?php echo $row['name'] ?> </h4>
                     </div>
                     <div>
-                        <h3>Event </h3>
-                        <h4> <?php echo $row['event']; ?> </h4>
+                        <h3>Email Address </h3>
+                        <h4> <?php echo $row['num']; ?> </h4>
                     </div>
                     <div>
-                        <h3>Event Date </h3>
-                        <h4><?php echo $row['date']; ?></h4>
+                        <h3>Role </h3>
+                        <h4><?php echo $row['event']; ?></h4>
                     </div>
                     <div>
                         <h3>Status </h3>
                         <h4> <?php echo $row['status']; ?> </h4>
+                    </div>
+                    <div>
+                        <div class="buttons">
+                            <button class="btn-acc-edit">
+                                <img src="assets/edit.svg" alt="">
+                            </button>
+                            <button class="btn-delete">
+                                <img src="assets/delete.svg" alt="">
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <?php } ?>
