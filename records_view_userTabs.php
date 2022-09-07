@@ -60,7 +60,7 @@
                             <!-- Show Filter -->
                             <div class="record-filter">
                                 <h4>Event Type: &nbsp;</h4>
-                                <div class="select-wrapper">
+                                <div class="select-wrapper no-bg">
                                     <select name="" id="">
                                         <option value="">All</option>
                                         <option value="">Baptism</option>
@@ -72,7 +72,7 @@
                             <!-- Sort By -->
                             <div class="record-filter">
                                 <h4>Sort by: &nbsp;</h4>
-                                <div class="select-wrapper">
+                                <div class="select-wrapper no-bg">
                                     <select name="" id="">
                                         <option value="">Alphabetical A-Z</option>
                                     </select>

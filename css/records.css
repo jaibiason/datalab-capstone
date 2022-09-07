@@ -139,14 +139,6 @@
     background-color: white;
     color: #F3A452;
 }
-.bookings-activities-files .record-filter .select-wrapper {
-    width: fit-content;
-    background-color: #F6F6F6;
-    background-image: url(../assets/select\ 2.svg);
-    background-size: unset;
-    background-position: right 10px center;
-    border: none;
-}
 .bookings-activities-files select{
     width: fit-content;
     padding: 0 30px 0 0;
