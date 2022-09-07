@@ -11,7 +11,7 @@
     ?> 
 </head>
 <body>
-    <div class="sidenav-calendar">
+    <div class="sidenav-calendar add-sched">
     <?php require("sidenav.php"); ?>
 
     <div class="container1">
@@ -22,32 +22,56 @@
             <h1>Add Schedule</h1>
         </div>
 
-        <div class="cal-header">
+        <div class="form-sched">
 
-            <div class="form-sched">
+            <div class="form-temp">
+            <form action="">
+                <div class="form-row">
+                    <div>
+                        <label for="">Schedule Name</label>
+                        <input type="text">
+                    </div>
 
-                <div class="form-temp">
-                    <div class="form-row">
-                        <div>
-                            <label for="">Schedule Name</label>
-                            <input type="text">
-                        </div>
-
-                        <div>
-                            <label for="">Event</label>
-                            <div class="select-wrapper">
-                                <select name="" id="">
-                                    <option value="">Baptism</option>
-                                    <option value="">Confirmation</option>
-                                    <option value="">Wedding</option>
-                                </select>
-                            </div>    
-                        </div>
-    
+                    <div>
+                        <label for="">Event</label>
+                        <div class="select-wrapper">
+                            <select name="" id="">
+                                <option value="">Baptism</option>
+                                <option value="">Confirmation</option>
+                                <option value="">Wedding</option>
+                            </select>
+                        </div>    
                     </div>
 
                 </div>
 
+                <div class="form-row">
+                    <div>
+                        <label for="eventDate">Starting Date</label>
+                        <input type="date">
+                    </div>
+
+                    <div>
+                        <label for="eventDate">Ending Date</label>
+                        <input type="date">
+                    </div>
+
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <label for="sTime">Starting Time</label>
+                        <input type="time">
+                    </div>
+
+                    <div>
+                        <label for="eTime">Ending Time</label>
+                        <input type="time">
+                    </div>
+
+                </div>
+
+            </form>
             </div>
 
         </div>
@@ -57,6 +81,6 @@
     </div>
 </body>
 <footer>
-    <?php require("footer.html"); ?> 
+    <?php require("footer.php"); ?> 
 </footer>
 </html>

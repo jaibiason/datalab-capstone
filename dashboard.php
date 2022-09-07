@@ -219,7 +219,7 @@
 
 </body>
 <footer>
- <?php require("footer.html"); ?> 
+ <?php require("footer.php"); ?> 
 </footer>
 
     <div class="dashboard-bottom-nav mobile">

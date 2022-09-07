@@ -80,6 +80,10 @@
 .add-folder svg{
     margin: auto;
 }
+/* input fields */
+.form-row > div{
+    width: 357px;
+}
 
 
 /* VIEW USER INFO PAGES */

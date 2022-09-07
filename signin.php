@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Sign Up</title>
-    <?php require("side_grad.html"); ?> 
+    <?php require("side_grad.php"); ?> 
 </head>
 <body>
     <section>
@@ -26,6 +26,6 @@
     </section>
 </body>
 <footer>
-<?php require("footer.html"); ?> 
+<?php require("footer.php"); ?> 
 </footer>
 </html>

@@ -7,7 +7,7 @@
 </head>
 <body>
     <section>
-    <?php require("side_grad.html"); ?> 
+    <?php require("side_grad.php"); ?> 
     <div class="container1">
         <h1>Change Your Password</h1>
         <form action="">
@@ -38,6 +38,6 @@
     </section>
 </body>
 <footer>
-    <?php require("footer.html"); ?> 
+    <?php require("footer.php"); ?> 
 </footer>
 </html>

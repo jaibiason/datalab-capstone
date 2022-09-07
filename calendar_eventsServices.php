@@ -49,11 +49,15 @@
 
         </div>
 
+        <div class="cal-header">
+            <button class="btn-primary">Add Schedule</button>
+        </div>
+
     </div>
     
     </div>
 </body>
 <footer>
-    <?php require("footer.html"); ?> 
+    <?php require("footer.php"); ?> 
 </footer>
 </html>

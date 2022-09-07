@@ -481,7 +481,7 @@
     </div>
 </body>
 <footer>
-    <?php require("footer.html"); ?> 
+    <?php require("footer.php"); ?> 
 </footer>
 <script src="js/view_userTabs.js"></script>
 </html>

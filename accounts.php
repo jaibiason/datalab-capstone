@@ -214,6 +214,6 @@
     </div>
 </body>
 <footer>
-    <?php require("footer.html"); ?> 
+    <?php require("footer.php"); ?> 
 </footer>
 </html>

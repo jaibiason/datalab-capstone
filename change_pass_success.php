@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="css/global.css">
     <link rel="stylesheet" type="text/css" href="css/signIn.css">
     <title>Change Password</title>
-    <?php require("side_grad.html"); ?> 
+    <?php require("side_grad.php"); ?> 
 
     <style>
         .container1{
@@ -41,6 +41,6 @@
     </section>
 </body>
 <footer>
-<?php require("footer.html"); ?> 
+<?php require("footer.php"); ?> 
 </footer>
 </html>

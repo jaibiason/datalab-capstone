@@ -14,7 +14,10 @@
 .sidenav-calendar .title{
     display: flex;
     align-items: center;
-    margin: 33px 0 52px 0;
+    margin: 1rem;
+}
+.add-sched .title{
+    margin-bottom: 40px;
 }
 .title h1{
     margin: 0 0 0 18px;
@@ -53,6 +56,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1rem;
 }
 /* calendar controls */
 .cal-controls{
@@ -86,13 +90,34 @@
 .record-filter h4{
     font-weight: 700;
 }
-.select-wrapper{
+.searchbar-wrapper{
     height: 28px;
-}.input[type="search"]{
+}input[type="search"]{
     height: 25px;
 }
 .select-wrapper.no-bg{
     background-color: white;
+}
+/* button */
+.cal-header button{
+    height: 39px;
+    width: 177px;
+    text-align: center;
+    align-self: flex-end;
+    margin-left: auto;
+}
+
+/* FORM */
+.form-sched{
+    display: flex;
+    width: 100%;
+}
+.form-temp{
+    flex-basis: 70%;
+    margin: 0;
+}
+.form-row > div{
+    width: 274px;
 }
 
 
