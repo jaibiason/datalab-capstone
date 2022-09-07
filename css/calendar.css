@@ -1,18 +1,20 @@
 .sidenav-calendar{
     display: flex;
 }
+.sidenav-calendar h1{
+    font-size: 25px;
+}
 .sidenav-calendar .container1{
     width: 100%;
-    padding: 5px;
+    padding: 5px 15px;
 }
 .sidenav-calendar .container1 > h1{
     margin: 33px 0 52px 21px;
-    font-size: 25px;
 }
-.sidenav-accounts .title{
+.sidenav-calendar .title{
     display: flex;
     align-items: center;
-    margin: 33px 0 52px 10px;
+    margin: 33px 0 52px 0;
 }
 .title h1{
     margin: 0 0 0 18px;
@@ -43,6 +45,54 @@
 }.calendar-buttons > button:hover{
     background-color: #F3A452;
     color: white;
+}
+
+/* CALENDAR page*/
+.cal-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* calendar controls */
+.cal-controls{
+    display: flex;
+    align-items: center;
+}
+.cal-controls > span{
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4F5;
+    margin-left: 1px;
+}
+.cal-controls > span:nth-of-type(1){
+    width: 28px;
+    border-radius: 6px 0px 0px 6px;
+}
+.cal-controls > span:nth-of-type(2){
+    font-size: 12px;
+    padding: 0 16px;
+}
+.cal-controls > span:nth-of-type(3){
+    width: 28px;
+    border-radius: 0px 6px 6px 0px;
+}
+/* filter */
+.record-filter{
+    margin-left: 17px;
+}
+.record-filter h4{
+    font-weight: 700;
+}
+.select-wrapper{
+    height: 28px;
+}.input[type="search"]{
+    height: 25px;
+}
+.select-wrapper.no-bg{
+    background-color: white;
 }
 
 
