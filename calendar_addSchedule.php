@@ -71,6 +71,26 @@
 
                 </div>
 
+                <div class="form-row">
+                    <div class="full">
+                        <label for="">Tags</label>
+                        <div class="select-wrapper full">
+                            <select required="" class="full" name="" id="">
+                            <option value="" disabled="" selected="" hidden="">Baptism, Wedding, Confirmation, etc.</option>
+                                <option value="">Baptism</option>
+                                <option value="">Confirmation</option>
+                                <option value="">Wedding</option>
+                                <option value="">Funeral</option>
+                            </select>
+                        </div>    
+                    </div>
+                </div>
+
+                <div class="buttons-cont">
+                    <button type="button" onclick="window.history.back()">Cancel</button>
+                    <input type="submit" class="btn-primary" value="Add">
+                </div>
+
             </form>
             </div>
 

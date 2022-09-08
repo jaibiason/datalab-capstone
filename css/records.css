@@ -224,6 +224,14 @@
 .user-details h4{
     font-size: 14px;
 }
+/* User Information */
+.cust-info{
+    display: flex;
+    width: 100%;
+}
+.cust-info {
+    text-align: start;
+}
 /* User Activities + User Files */
 .activities-cont > div,
 .files-cont > div{

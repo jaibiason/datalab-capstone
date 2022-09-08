@@ -639,6 +639,7 @@ form .full{
     }
     .form-temp .form-row > div{
         margin-bottom: 30px;
+        width: 100%;
     }
     .form-temp .form-row input,
     .form-temp .select-wrapper,
