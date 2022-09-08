@@ -40,13 +40,39 @@
                 
                 <div class="view-user-nav web">
                     <div>
-                        <a type="button" id="defaultOpen" class="tablinks active" onclick="showUserRecord(event, 'Bookings')">Bookings</a>
+                        <a type="button" id="defaultOpen" class="tablinks active" onclick="showUserRecord(event, 'Information')" href="#">Customer Information</a>
+                        <a type="button" class="tablinks" onclick="showUserRecord(event, 'Bookings')">Bookings</a>
                         <a type="button" class="tablinks" onclick="showUserRecord(event, 'Activities')" href="#"> <nobr>Activities</nobr></a>
                         <a type="button" class="tablinks" onclick="showUserRecord(event, 'Files')" href="#">Files</a>
                     </div>
                 </div>
 
                 <!-- left table -->
+                <!-- * customer information  -->
+                <div class="booking-table tabcontent" id="Information">
+                    <div class="cust-info">
+                        <div>
+                            <h2>Code</h2>
+                            <p>BIN-02</p>
+                        </div>
+                        
+                        <div>
+                            <h2>Service Date</h2>
+                            <p> <?php echo "March 25, 2023" ?> </p>
+                        </div>
+
+                        <div>
+                            <h2>Event Name</h2>
+                            <p> <?php echo "Baptism Seminar" ?> </p>
+                        </div>
+
+                        <div>
+                            <h2>Event Time</h2>
+                            <p> <?php echo "1:30:00 PM" ?> </p>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- * bookings -->
                 <div class="bookings-table tabcontent" id="Bookings">
                     <div class="search-download-cont">
