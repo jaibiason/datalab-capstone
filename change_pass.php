@@ -12,7 +12,7 @@
         <h1>Change Your Password</h1>
         <form action="">
             <label for="email">Password</label>
-            <input type="text" placeholder="Enter your preferred password">
+            <input type="password" placeholder="Enter your preferred password">
             <div class="checklist_wrap">
                 <div class="checklist_wrap_col1">
                     <p><img src="assets/check gray.svg" alt="grey">Atleast 8 characters</p>
@@ -24,7 +24,7 @@
                 </div>
             </div>
             <label for="password">Re-enter Password</label>
-            <input type="text" placeholder="Re-enter your password">
+            <input type="password" placeholder="Re-enter your password">
             <input class="continue_margin" type="submit" name="submit" value="Continue">
             <a href="signin.php" class="mobile_only_view">
                 <button >Already have an account</button>

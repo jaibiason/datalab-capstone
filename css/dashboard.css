@@ -272,6 +272,9 @@ table tbody .new::after{
     border-radius: 50%;
     color: white;
   }
+  .cal-day__day--selected:hover{
+    background-color: #F3A452;
+  }
   .event:after {
     background: #F3A452;
     border-radius: 50%;

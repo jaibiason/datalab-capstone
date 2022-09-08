@@ -70,6 +70,21 @@
                             <h2>Event Time</h2>
                             <p> <?php echo "1:30:00 PM" ?> </p>
                         </div>
+
+                        <div>
+                            <h2>Customer Name</h2>
+                            <p> <?php echo "1:30:00 PM" ?> </p>
+                        </div>
+
+                        <div>
+                            <h2>Status</h2>
+                            <div class="select-wrapper no-bg">
+                                <select name="" id="">
+                                    <option value="">Completing Requirements</option>
+                                </select>
+                            </div>    
+                        </div>
+
                     </div>
                 </div>
 
@@ -509,6 +524,7 @@
 
     <div class="dashboard-bottom-nav mobile">
         <div>
+        <a id="nav-bookings" class="" href="#Information">Customer Information</a>
             <a id="nav-bookings" class="" href="#Bookings">Bookings</a>
             <a id="nav-activities" href="#Activities"> Activities </a>
             <a id="nav-files" href="#Files">Files</a>
