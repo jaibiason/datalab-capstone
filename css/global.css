@@ -668,6 +668,8 @@ form .full{
     .dashboard-bottom-nav::-webkit-scrollbar { display: none;  }
     .dashboard-bottom-nav > div{
         display: flex;
+        overflow: auto;
+        text-align: center;
     }
     .dashboard-bottom-nav a{
         display: flex;

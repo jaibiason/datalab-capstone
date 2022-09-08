@@ -14,8 +14,8 @@
         <form action="">
             <label for="email">Email</label>
             <input type="text" placeholder="Enter your email address">
-            <label for="password">Password</label>
-            <input type="text" placeholder="Enter your password">
+            <label for="pass">Password</label>
+            <input type="password" placeholder="Enter your password">
             <a href="change_pass.php">Forgot your Password?</a>
             <input type="submit" name="submit" value="Sign In">
         </form>
