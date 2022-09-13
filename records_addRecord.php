@@ -24,10 +24,26 @@
         <div class="form-temp form-btn-add-record">
 
             <form action="">
-                <div class="form-row">
+
+            <div class="title" >
+                <a href=""> <p>Upload Date</p> </a>
+            </div>
+
+            <div class="form-row">
                     <div>
-                        <label for="code">Code</label>
-                        <input type="text" disabled class="gray" placeholder="<?php echo "B01" ?>">
+                        <label for="">Event</label>
+                        <div class="select-wrapper">
+                            <select name="" id="">
+                                <option value="">Baptism</option>
+                                <option value="">Confirmation</option>
+                                <option value="">Wedding</option>
+                            </select>
+                        </div>    
+                    </div>
+
+                    <div>
+                        <label for="eventDate">Event Date</label>
+                        <input type="date">
                     </div>
                 </div class="form-row">
 
@@ -44,24 +60,6 @@
                                 <option value="">Completing Requirements</option>
                             </select>
                         </div>
-                    </div>
-                </div class="form-row">
-
-                <div class="form-row">
-                    <div>
-                        <label for="">Event</label>
-                        <div class="select-wrapper">
-                            <select name="" id="">
-                                <option value="">Baptism</option>
-                                <option value="">Confirmation</option>
-                                <option value="">Wedding</option>
-                            </select>
-                        </div>    
-                    </div>
-
-                    <div>
-                        <label for="eventDate">Event Date</label>
-                        <input type="date">
                     </div>
                 </div class="form-row">
 
