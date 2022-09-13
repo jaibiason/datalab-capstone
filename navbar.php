@@ -37,12 +37,14 @@
                 margin-left: 15px;
                 font-weight: 400;
             }
-            .top-icons a.web:hover{
+            .top-icons a.web:hover,
+            .top-icons .active {
                 background-color: white;
                 transition: .15s ease-in;
             }
             .top-icons a:hover svg path,        /* fix soon user acc icon thinner */
-            .top-icons a:hover svg{
+            .top-icons a:hover svg,
+            .top-icons .active svg path {
                 fill: #F3A452;
                 stroke: #F3A452;
                 stroke-width: .3px;
@@ -164,7 +166,7 @@
             </div>
             <h1 class="page-title mobile"><?php echo $page; ?></h1>
             <div class="top-icons ">
-                <a class="web" href="">
+                <a class="web <?php if ($page == "notifications") {echo "active";} ?> " href="notifications.php">
                     <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M8.99497 20C8.4642 20 7.95518 19.7893 7.57987 19.4142C7.20457 19.0391 6.99372 18.5304 6.99372 18H10.9962C10.9962 18.5304 10.7854 19.0391 10.4101 19.4142C10.0348 19.7893 9.52573 20 8.99497 20ZM16.9999 17H0.98999V15L2.99123 14V8.5C2.99123 5.038 4.41312 2.793 6.99372 2.18V0H10.9962V2.18C13.5768 2.792 14.9987 5.036 14.9987 8.5V14L16.9999 15V17ZM8.99497 3.75C8.39402 3.71122 7.79293 3.82362 7.24667 4.07693C6.70042 4.33024 6.22642 4.71636 5.86802 5.2C5.24518 6.18456 4.93958 7.33638 4.99248 8.5V15H12.9975V8.5C13.0503 7.33639 12.7447 6.18458 12.1219 5.2C11.7635 4.71636 11.2895 4.33024 10.7433 4.07693C10.197 3.82362 9.59591 3.71122 8.99497 3.75Z" fill="white"/>
                         </svg>                        
@@ -182,7 +184,7 @@
             <!-- MOBILE -->
                 <ul class="nav mobile">
                     <li class="navlink <?php if ($page == "profile") {echo "active-page";} ?>"><a href="#">Profile</a></li>
-                    <li class="navlink <?php if ($page == "notification") {echo "active-page";} ?>"><a href="#">Notifications</a></li>
+                    <li class="navlink <?php if ($page == "notifications") {echo "active-page";} ?>"><a href="#">Notifications</a></li>
                     <li class="navlink <?php if ($page == "logout") {echo "active-page";} ?>"><a href="logout.php">Logout</a></li>
                     <li class="navlink <?php if ($page == "dashboard") {echo "active-page";} ?>"><a href="dashboard.php">Dashboard
                         <svg width="24" height="21" viewBox="0 0 24 21" fill="none" xmlns="http://www.w3.org/2000/svg">

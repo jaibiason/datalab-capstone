@@ -1,0 +1,48 @@
+.sidenav-notifications{
+    display: flex;
+}
+.sidenav-notifications .container1{
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+}
+.sidenav-notifications .container1 > h1{
+    margin: 33px 0 52px 21px;
+}
+.sidenav-notifications .title{
+    display: flex;
+    align-items: center;
+    margin: 33px 0 52px 10px;
+}
+.sidenav-notifications h1{
+    margin: 0 0 0 18px;
+    font-size: 25px;
+}
+
+.notifications-cont {
+    margin-bottom: 1rem;
+}
+.notifications-cont > div {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}.notifications-cont > div:nth-of-type(odd) {
+    background-color: #F5F5F5;
+}
+.notifications-cont > div p,
+.notifications-cont > div h2 {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+}
+.notifications-cont > div p {
+    margin-right: 48px;
+}
+.notifications-cont > div h2 {
+    color: #F3A452;
+}
+.notifications-cont div > span {
+    display: flex;
+    margin: auto;
+}
