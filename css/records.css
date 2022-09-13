@@ -84,7 +84,15 @@
 .form-row > div{
     width: 357px;
 }
-
+/* ADD RECORD PAGE */
+.form-temp .title{
+    /* width: 100%; */
+}
+.form-temp .title > a{
+    margin-left: auto;
+    color: #F3A452;
+    text-decoration: underline;
+}
 
 /* VIEW USER INFO PAGES */
 .view-userRecords .container1{
