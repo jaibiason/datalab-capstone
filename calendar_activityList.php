@@ -31,8 +31,8 @@
                 </div>
             </div>
             
-            <div class="attendance-schedInfo tabcontent" id="Attendees">
-                <div class="attendance">
+            <div class="attendance-schedInfo " id="Attendees">
+                <div class="attendance tabcontent">
 
                     <div class="qrCode-cont">
                         <h2>Scan QR Code for Attendance</h2>
@@ -55,7 +55,7 @@
                                 <!-- Sort By -->
                                 <div class="record-filter">
                                     <h4>Sort by: &nbsp;</h4>
-                                    <div class="select-wrapper no-bg">
+                                    <div class="select-wrapper">
                                         <select name="" id="">
                                             <option value="">Alphabetical A-Z</option>
                                         </select>
@@ -253,7 +253,7 @@
 
                         <div>
                             <h2>Status</h2>
-                            <div class="select-wrapper no-bg">
+                            <div class="select-wrapper">
                                 <select name="" id="">
                                     <option value="">Completing Requirements</option>
                                     <option value="">Schedule Confirmed</option>
@@ -278,10 +278,8 @@
 
     <div class="dashboard-bottom-nav mobile">
         <div>
-        <a id="nav-bookings" class="" href="#Information">Customer Information</a>
-            <a id="nav-bookings" class="" href="#Bookings">Bookings</a>
-            <a id="nav-activities" href="#Activities"> Activities </a>
-            <a id="nav-files" href="#Files">Files</a>
+        <a id="nav-bookings" class="" href="#Attendees">Attendees List</a>
+            <a id="nav-bookings" class="" href="#SchedInfo">Schedule Information</a>
         </div>
     </div>
 
