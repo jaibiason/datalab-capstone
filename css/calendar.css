@@ -150,6 +150,7 @@
     width: 100%;
     height: 132px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     padding: 0 97px;
@@ -220,10 +221,33 @@ table tbody .new::after {
         margin: 29px 0 0 21px;
         font-size: 20px;
     }
+    .sidenav-calendar .title > h1{ 
+        font-size: 20px;
+    }
     .calendar-buttons{
         flex-direction: column;
         margin: inherit auto 0 auto;
     }.calendar-buttons > button:first-of-type{
         margin: 0 0 39px 0 ;
+    }
+    /* QR Code */
+    .qrCode-cont {
+        flex-direction: column;
+        justify-content: center;
+        height: 375px;
+        padding: 0;
+    }
+    .qrCode-cont > *{
+        margin-bottom: 70px;
+    }
+    .qrCode-cont .buttons {
+        flex-direction: column;
+    }
+    .qrCode-cont .buttons > * {
+        margin-bottom: 26px;
+    }
+    /* table filters */
+    .record-filter {
+        margin: 0;
     }
 }
