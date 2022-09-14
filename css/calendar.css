@@ -95,7 +95,7 @@
 }input[type="search"]{
     height: 25px;
 }
-.select-wrapper.no-bg{
+.cal-header .select-wrapper.no-bg{
     background-color: white;
 }
 /* button */
@@ -119,6 +119,97 @@
 .form-row > div{
     width: 274px;
 }
+
+/* LIST */
+    /* tabs */
+.view-user-nav, .view-user-nav > div {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 49px;
+    background: #F3A452;
+}
+.view-user-nav a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+}.view-user-nav a.active {
+    background-color: white;
+    color: #F3A452;
+}
+.tabcontent{
+    display: none;
+}
+/* Attendees List */
+    /* QR */
+.qrCode-cont {
+    width: 100%;
+    height: 132px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 97px;
+    margin: 11px 0;
+    background-color: #F4F4F5;
+}
+.qrCode-cont h2{
+    font-size: 20px;
+}
+.qrCode-cont .buttons {
+    display: flex;
+} 
+.buttons > *{
+    width: 177px !important;
+    height: 39px;
+    margin-right: 23px;
+}
+    /* table */
+.bookings-table {
+    height: fit-content;
+}
+table tbody .new::after {
+    right: 47%;
+}
+/* Schedule Info */
+.sched-info{
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px 1rem;   
+    width: 100%;
+    padding: 1rem 30px;
+    margin: 25px auto 0 auto;
+    border: 1px solid #F2F2F2;
+    border-radius: 7px;
+}
+.sched-info > div{
+    width: 23%;
+}
+.sched-info h2{
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+    font-weight: 700;
+}.sched-info > div:last-of-type h2{
+    margin-bottom: 4px;
+}
+.sched-info p{
+    font-size: .875rem;
+}
+.sched-info .select-wrapper{
+    height: 26px;
+}.sched-info .select-wrapper.no-bg{
+    background-color: white;
+}.no-bg select:focus-visible {
+    outline: none;
+}
+.sched-details select {
+    width: fit-content;
+    padding: 0 30px 0 5px;
+}
+
 
 
 @media screen and (max-width: 678px){
