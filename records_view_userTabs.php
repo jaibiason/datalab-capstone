@@ -78,7 +78,7 @@
 
                         <div>
                             <h2>Status</h2>
-                            <div class="select-wrapper">
+                            <div class="select-wrapper no-bg">
                                 <select name="" id="">
                                     <option value="">Completing Requirements</option>
                                 </select>
