@@ -13,7 +13,7 @@
 <body>
     <div class="sidenav-calendar ">
     <?php require("sidenav.php"); ?>
-    <div class="container1">
+    <div class="container1 tabs">
         <!-- top user header -->
         <div class="title ">
             <a href="records.php"><svg width="23" height="20" viewBox="0 0 23 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -84,6 +84,7 @@
                                         <th>Name</th>
                                         <th>Email Address</th>
                                         <th>Contact Number</th>
+                                        <th></th>
                                     </tr>
                                 </thead>
 
@@ -92,10 +93,20 @@
                                     <tr onclick=" window.location.href='#' ">
                                         <!-- .new makes the new badge visible -->
                                         <td class="new"> BIN-<?php echo $row['id']; ?> </th>
-                                        <td> <?php echo $row['name']; ?> </th>
-                                        <td> <?php echo $row['event']; ?> </th>
-                                        <td> <?php echo $row['num']; ?> </th>
-                                    </tr>
+                                        <td> <?php echo $row['name']; ?> </td>
+                                        <td> <?php echo $row['event']; ?> </td>
+                                        <td> <?php echo $row['num']; ?> </td>
+                                        <td> 
+                                            <div class="buttons">
+                                                <button class="btn-acc-edit">
+                                                    <img src="assets/edit.svg" alt="">
+                                                </button>
+                                                <button class="btn-delete">
+                                                    <img src="assets/delete.svg" alt="">
+                                                </button>
+                                            </div>
+                                        </td>
+                                </tr>
                                     <?php } ?>
                                 </tbody>
                             </table>
@@ -123,6 +134,17 @@
                                     <h3>Status </h3>
                                     <h4> <?php echo $row['status']; ?> </h4>
                                 </div>
+                                <div>
+                                    <div class="buttons">
+                                        <button class="btn-acc-edit">
+                                            <img src="assets/edit.svg" alt="">
+                                        </button>
+                                        <button class="btn-delete">
+                                            <img src="assets/delete.svg" alt="">
+                                        </button>
+                                    </div>
+                                </div>
+
                             </div>
                             <?php } ?>
                         </div>  
@@ -261,6 +283,11 @@
                             </div>    
                         </div>
 
+                    </div>
+
+                    <div class="buttons">
+                        <button class="btn-delete">Delete Schedule</button>
+                        <button class="btn-primary">Update Status</button>
                     </div>
 
                 </div>

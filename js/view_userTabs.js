@@ -37,7 +37,7 @@ function navHighlighter() {
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight;
   
-    const sectionTop = (current.getBoundingClientRect().top + window.pageYOffset) - 50;
+    const sectionTop = (current.getBoundingClientRect().top + window.pageYOffset) - 200;   // orginally -> 50
     sectionId = current.getAttribute("id");
     
     /*
