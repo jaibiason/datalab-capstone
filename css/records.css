@@ -262,7 +262,7 @@
 .files-cont > div{
     display: flex;
     align-items: center   ;
-    padding: 20px;
+    padding: 12px 20px;
     font-family: 'Roboto', sans-serif;
 }
 .activities-cont > div:nth-of-type(odd),

@@ -9,6 +9,9 @@
     width: 100%;
     padding: 5px 15px;
 }
+.container1.tabs {
+    padding: 0;
+}
 .sidenav-calendar .container1 > h1{
     margin: 33px 0 52px 21px;
 }
@@ -121,7 +124,7 @@
     width: 274px;
 }
 
-/* LIST */
+/* TABS */
     /* tabs */
 .view-user-nav, .view-user-nav > div {
     display: flex;
@@ -164,8 +167,9 @@
 .qrCode-cont .buttons {
     display: flex;
 } 
-.buttons > *{
-    width: 177px !important;
+.qrCode-cont .buttons > *,
+.schedInfo-cont .buttons > *{
+    width: 177px;
     height: 39px;
     margin-right: 23px;
 }
@@ -176,6 +180,19 @@
 table tbody .new::after {
     right: 47%;
 }
+.records-table .web .btn-acc-edit {
+    margin-right: 1rem;
+}
+.schedInfo-cont .buttons {
+    flex-direction: column;
+    width: fit-content;
+    margin: auto;
+    margin-top: 27%;
+}
+.pagination-cont{
+    padding: 64px 0 !important;
+    justify-content: center !important;
+}
 /* Schedule Info */
 .sched-info{
     display: flex;
@@ -183,7 +200,7 @@ table tbody .new::after {
     gap: 40px 1rem;   
     width: 100%;
     padding: 1rem 30px;
-    margin: 25px auto 0 auto;
+    margin: 25px 10px 0 10px;
     border: 1px solid #F2F2F2;
     border-radius: 7px;
 }
@@ -211,12 +228,131 @@ table tbody .new::after {
     width: fit-content;
     padding: 0 30px 0 5px;
 }
+/* Files Tab */
+.files-cont div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.files-cont > div {
+    padding: 12px 20px;
+}.files-cont > div:nth-of-type(odd){
+    background-color: #F5F5F5;
+}
+.files-cont .text img{
+    margin-right: 11px;
+}
+.files-cont .text a{
+    font-size: 15px;
+    text-decoration: unset;
+}
+.btn-view-file{
+    width: 41px;
+    background-color: #F3A452;
+    border-radius: 4px;
+    margin-right: 5px;
+}.btn-view-file:hover{
+    background-color: #95530E;
+}
+/* Invoice Tab */
+.invoice-cont {
+    position: relative;
+    display: flex;
+    margin: 25px 19px;
+}
+    /* Invoice: top section */
+.invoice-cont .top-cont { 
+    display: flex;
+    flex-flow: row wrap;
+    gap: 40px 1rem;
+}
+.invoice-cont .top-cont > div {
+    height: 230px;
+    position: relative;
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+    border: 1px solid #E9E9E9;
+    box-shadow: 4px 4px 4px rgba(233, 233, 233, 0.25);
+    border-radius: 7px;
+}
+.files-cont.proof-payment > div{ 
+    background-color: white;
+}
+.invoice-cont .top-cont > div:nth-of-type(1) { flex-grow: 1; }
+.invoice-cont .top-cont > div:nth-of-type(2) { flex-grow: 2; }
+.invoice-cont .top-cont > div:nth-of-type(3) { flex-grow: 1; }
+.top-cont > div > p:first-child {
+    margin-bottom: 38px;
+    text-align: left;
+}
+.top-cont p { font-size: 15px; }
+.cust-details p:nth-of-type(2) { 
+    font-size: 14px;
+    color: #A4A4A4;
+ }
+.cust-details a {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    margin: 0 auto 2rem auto;
+    text-decoration: underline;
+}
+.cust-details a p { font-size: 14px; }
+    /* Invoice: bottom section */
+.bottom-cont.form-temp {
+    width: 100%;
+    flex-basis: unset;
+    padding: 1.5rem 1rem;
+    margin: 29px 0 ;
+    border: 1px solid #E9E9E9;
+    box-shadow: 4px 4px 4px rgba(233, 233, 233, 0.25);
+    border-radius: 7px;
+}
+.bottom-cont .title {
+    align-items: center;
+    justify-content: space-between;
+    margin: 24px 16px;
+}
+.bottom-cont .title p {
+    margin: 0;
+}
+.bottom-cont form {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 64px;
+    gap: 27px 71px;
+}
+.bottom-cont form > div {
+    display: flex;
+    align-items: center;
+    width: 46%;
+    flex-grow: 1;
+}
+.bottom-cont form label {
+    flex-basis: 70%;
+    margin: 0;
+    font-family: 'Almarai', sans-serif;
+}
+.bottom-cont.form-temp input{
+    height: 37px;
+}
+.invoice-cont > .buttons {
+    width: fit-content;
+    margin: auto;
+}
+.invoice-cont > .buttons > * {
+    width: 177px;
+    height: 39px;
+    margin-right: 23px;
+}
 
 
 
 @media screen and (max-width: 678px){
     .sidenav-calendar .container1{
-        height: 100vh;
+        /* height: 100vh; */
         padding: 0;
     }
     .sidenav-calendar .container1 > h1 {
@@ -236,6 +372,10 @@ table tbody .new::after {
     .tabcontent {
         display: block !important;
     }
+    .service-pg.dashboard-bottom-nav a,
+    .service-pg.dashboard-bottom-nav > div {
+        width: 100%;
+    }
     /* QR Code */
     .qrCode-cont {
         flex-direction: column;
@@ -252,11 +392,25 @@ table tbody .new::after {
     .qrCode-cont .buttons > * {
         margin-bottom: 26px;
     }
+    /* table cont/bookings-table */
+    .sched-details .bookings-table {
+        margin: 0;
+    }
     /* table filters */
     .record-filter {
         margin: 0;
     }
-    /* info */
+    /* table content */
+    .records-table .buttons {
+        width: fit-content;
+        margin-left: auto;
+    }
+    /* Pagination */
+    .sched-details .table-pagination {
+        padding: 72px 0;
+        background-color: #F2F2F2;
+    }
+    /* Schedule Info */
     .sched-info {
     gap: 35px 0;
     width: fit-content;
@@ -264,8 +418,53 @@ table tbody .new::after {
     margin: 0 5px;
     border: 1px solid #F2F2F2;
     border-radius: 7px;
-    }   
-    .sched-info >div {
+    }
+    .service-pg .sched-info {
+        margin-top: 4rem ;
+    }
+    .sched-info > div {
         width: 50%;
     }
+    .schedInfo-cont .buttons {
+        width: 100%;
+        padding: 0 29px;
+        margin: 60px 0;
+    }
+    .schedInfo-cont .buttons > * { 
+        width: 100%;
+        height: 43px;
+        font-size: 19px;
+        margin: 0 auto .5rem auto;
+    }
+    /* Files Tab */
+    .files-cont > div{ 
+        flex-wrap: wrap;
+    }
+    .files-cont .buttons {
+        margin: 15px 0 0 auto;
+    }
+        /* form */
+    .form-temp {
+        flex-basis: unset;
+    }
+    /* Invoice Tab */
+    .bottom-cont form {
+        margin: 0;
+    }
+    .bottom-cont form > div {
+        align-items: unset;
+        width: 100%;
+        flex-grow: 1;
+        flex-direction: column;
+        height: fit-content;
+        /* justify-content: start; */
+    }
+    .bottom-cont form label {
+        margin-bottom: 7px;
+    }
+    .invoice-cont > .buttons,
+    .invoice-cont > .buttons > * {
+        width: 100%;
+        margin-bottom: 7px;
+    }    
 }
