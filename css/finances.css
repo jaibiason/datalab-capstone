@@ -1,0 +1,74 @@
+.sidenav-finances{
+    position: relative;
+    display: flex;
+}
+.sidenav-finances h1{
+    font-size: 25px;
+}
+.sidenav-finances .container1{
+    width: 100%;
+    padding: 5px 28px;
+}
+.sidenav-finances .title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+}
+.add-sched .title{
+    margin-bottom: 40px;
+}
+/* header */
+.cal-controls {
+    display: flex;
+}
+.cal-controls > span {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4F5;
+    margin-left: 1px;
+    cursor: pointer;
+}
+.cal-controls > span:nth-of-type(1) {
+    width: 44px;
+    border-radius: 6px 0px 0px 6px;
+}
+.cal-controls > span:nth-of-type(2) {
+    font-size: 16px;
+    padding: 0 16px;
+}
+.cal-controls > span:nth-of-type(3) {
+    width: 44px;
+    border-radius: 0px 6px 6px 0px;
+}
+.cal-controls > span img {
+    height: 16px;
+}
+/* Top Cont */
+.top-cont {
+    display: flex;
+    flex-flow: row wrap;
+    pad: 1rem;
+}
+.top-cont > div {
+    width: 241px;
+    
+}
+
+
+
+@media screen and (max-width: 678px){
+    .sidenav-finances .container1{
+        /* height: 100vh; */
+        padding: 0;
+    }
+    .sidenav-finances .container1 > h1 {
+        margin: 29px 0 0 21px;
+        font-size: 20px;
+    }
+    .sidenav-finances .title > h1{ 
+        font-size: 20px;
+    }   
+}
