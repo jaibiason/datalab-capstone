@@ -23,10 +23,8 @@
             <div>
                 <p> June 16, 2022 </p>
                 <p> 11:01:00 AM </p>
-                <span>
-                    <h2><?php echo $row['name'] ?> </h2>
-                    <p> &nbsp; has uploaded his requirements for Baptism on June 26, 2022 </p>
-                </span>
+                <p> <span class="txt-orange"> <?php echo $row['name'] ?> </span>
+                    &nbsp; has uploaded his requirements for Baptism on June 26, 2022 </p>
             </div>
 
             <?php } ?>

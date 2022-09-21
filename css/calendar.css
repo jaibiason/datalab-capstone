@@ -150,7 +150,7 @@
 }
 /* Attendees List */
     /* QR */
-.qrCode-cont {
+.tab-header {
     width: 100%;
     height: 132px;
     display: flex;
@@ -161,13 +161,13 @@
     margin: 11px 0;
     background-color: #F4F4F5;
 }
-.qrCode-cont h2{
+.tab-header h2{
     font-size: 20px;
 }
-.qrCode-cont .buttons {
+.tab-header .buttons {
     display: flex;
 } 
-.qrCode-cont .buttons > *,
+.tab-header .buttons > *,
 .schedInfo-cont .buttons > *{
     width: 177px;
     height: 39px;
@@ -200,7 +200,7 @@ table tbody .new::after {
     gap: 40px 1rem;   
     width: 100%;
     padding: 1rem 30px;
-    margin: 25px 10px 0 10px;
+    /* margin: 25px 10px 0 0; */
     border: 1px solid #F2F2F2;
     border-radius: 7px;
 }
@@ -347,6 +347,28 @@ table tbody .new::after {
     height: 39px;
     margin-right: 23px;
 }
+/* Certificate Tab */
+.notifications-cont > div {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+.notifications-cont > div:nth-of-type(odd) {
+    background-color: #F5F5F5;
+}
+.notifications-cont > div * {
+    font-family: 'Roboto';
+    font-size: 14px;
+    font-weight: 500;
+}
+.notifications-cont > div p {
+    margin-right: 48px;
+}
+.notifications-cont > div p:last-of-type {
+    font-weight: 400;
+}
+.txt-orange { color: #F3A452;}
 
 
 
@@ -377,20 +399,20 @@ table tbody .new::after {
         width: 100%;
     }
     /* QR Code */
-    .qrCode-cont {
+    .tab-header {
         flex-direction: column;
         justify-content: center;
         height: 375px;
         padding: 0;
     }
-    .qrCode-cont > *{
+    .tab-header > *{
         margin-bottom: 70px;
     }
-    .qrCode-cont .buttons {
+    .tab-header .buttons {
         flex-direction: column;
     }
-    .qrCode-cont .buttons > * {
-        margin-bottom: 26px;
+    .tab-header .buttons > * {
+        margin: 0 0 26px 0;
     }
     /* table cont/bookings-table */
     .sched-details .bookings-table {
@@ -465,6 +487,19 @@ table tbody .new::after {
     .invoice-cont > .buttons,
     .invoice-cont > .buttons > * {
         width: 100%;
-        margin-bottom: 7px;
+        margin: 0 0 7px;
     }    
+    /* Certificate Tab */
+    .notifications-cont > div {
+        flex-flow: row wrap;
+    }
+    .notifications-cont > div p{
+        margin: 0;
+        flex-basis: 50%;
+    }
+    .notifications-cont > div p:last-of-type {
+        margin: 15px 0 0 0;
+        flex-basis: 100%;
+    }
+    
 }
