@@ -35,7 +35,7 @@
                 <!-- * attendees list -->
                 <div class="attendance tabcontent" id="Attendees">
 
-                    <div class="qrCode-cont">
+                    <div class="tab-header">
                         <h2>Scan QR Code for Attendance</h2>
                         <div class="buttons">
                             <button class="btn-primary">Generate New QR</button>

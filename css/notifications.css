@@ -30,19 +30,28 @@
 }.notifications-cont > div:nth-of-type(odd) {
     background-color: #F5F5F5;
 }
-.notifications-cont > div p,
-.notifications-cont > div h2 {
+.notifications-cont > div * {
     font-family: 'Roboto';
     font-size: 14px;
     font-weight: 500;
 }
 .notifications-cont > div p {
     margin-right: 48px;
+}.notifications-cont > div p:last-of-type {
+    font-weight: 400;
 }
-.notifications-cont > div h2 {
-    color: #F3A452;
-}
-.notifications-cont div > span {
-    display: flex;
-    margin: auto;
+.txt-orange { color: #F3A452;}
+
+@media screen and (max-width: 678px) {
+    .notifications-cont > div {
+        flex-flow: row wrap;
+    }
+    .notifications-cont > div p{
+        margin: 0;
+        flex-basis: 50%;
+    }
+    .notifications-cont > div p:last-of-type {
+        margin: 15px 0 0 0;
+        flex-basis: 100%;
+    }
 }
