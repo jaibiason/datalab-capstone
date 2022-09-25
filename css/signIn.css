@@ -121,6 +121,35 @@ input[type=password]{
     text-decoration: none;
     color: #F3A452;
 }
+/* changepass2 */
+.changepass-pg {
+    display: flex;
+}
+.changepass-pg .side-grad {
+    position: relative;
+}
+.changepass-pg .content {
+    display: flex;
+    width: 100%;
+    padding: 3rem 1rem;
+}
+.content .btn-back {
+    width: fit-content;
+    margin: 0;
+    border: none;
+    background: none;
+}
+.content .margin {
+    margin: 144px auto 0 auto !important;
+}
+.content .container1 p {
+    margin-bottom: 82px;
+    font-size: 18px;
+}
+.container1 form input[type=text].otp {
+    width: 282px;
+    margin: auto;
+}
 
 @media screen and (max-width: 400px){
     .container1{

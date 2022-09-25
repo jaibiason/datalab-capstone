@@ -49,26 +49,110 @@
 /* Top Cont */
 .top-cont {
     display: flex;
+    justify-content: center;
     flex-flow: row wrap;
-    pad: 1rem;
+    gap: 1rem;
 }
 .top-cont > div {
     width: 241px;
-    
+    height: 230px;
+    padding: 31px 0;
+    border: 1px solid #E9E9E9;
+    box-shadow: 4px 4px 4px rgba(233, 233, 233, 0.25);
+    border-radius: 7px;
+    text-align: center;
 }
-
-
+.top-cont > div > h2 {
+    margin-bottom: 2.875rem;
+    font-size: 18px;
+}
+.top-cont > div p {
+    color: #00AA07;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+.top-cont > div h1 {
+    font-size: 25px;
+}
+/* Bottom Cont */
+.bottom-cont {
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    margin-top: 2rem;
+    border: 1px solid #E9E9E9;
+    box-shadow: 4px 4px 4px rgba(233, 233, 233, 0.25);
+    border-radius: 7px;
+}
+.bottom-cont > h1{
+    margin: 30px 25px;
+}
+.bottom-cont .files-cont {
+    height: 100%;
+    overflow: auto;
+}
+.files-cont > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 12px 24px 30px;
+    border-bottom: 1px solid #F2F2F2;
+}
+.files-cont > div > * { font-size: 12px; }
+.files-cont > div p:nth-of-type(1) { 
+    width: 20%; 
+    font-weight: 700;
+}
+.files-cont > div p:nth-of-type(2) { width: 30%; }
+.files-cont > div p:nth-of-type(3) { width: 30%; }
+.files-cont > div a { text-decoration: underline; }
+.files-cont::-webkit-scrollbar,
+.files-cont::-webkit-scrollbar-track {
+    display: none;
+}
 
 @media screen and (max-width: 678px){
     .sidenav-finances .container1{
-        /* height: 100vh; */
-        padding: 0;
+        padding: 31px 11px;
     }
-    .sidenav-finances .container1 > h1 {
-        margin: 29px 0 0 21px;
-        font-size: 20px;
+    .sidenav-finances .title {
+        flex-flow: column;
+        gap: 1rem;
     }
-    .sidenav-finances .title > h1{ 
-        font-size: 20px;
-    }   
+    .cal-controls {
+        width: 100%;
+    }
+    .cal-controls > span:nth-of-type(1) { flex-grow: 1; }
+    .cal-controls > span:nth-of-type(2) { flex-grow: 2; }
+    .cal-controls > span:nth-of-type(3) { flex-grow: 1; }
+    .sidenav-finances .btn-dl-records {
+        margin-left: auto;
+    }
+    /* Top Cont */
+    .top-cont > div {
+        width: 100%;
+    }
+    /* Bottom Cont */
+    .bottom-cont {
+        height: 1240px;
+    }
+    .files-cont > div {
+        flex-flow: row wrap;
+        gap: 1rem;
+    }
+    .files-cont > div p:nth-of-type(1) { 
+        order: 1;
+        width: fit-content; 
+    }
+    .files-cont > div p:nth-of-type(2) { 
+        order: 3; 
+        width: 100%;
+    }
+    .files-cont > div p:nth-of-type(3) { 
+        order: 4; 
+        width: 100%;
+    }
+    .files-cont > div a { 
+        order: 2; 
+        margin-left: auto;
+    }
 }
