@@ -231,6 +231,19 @@ input[type=password]{
         margin-bottom: 2.375rem; /* 17+21 */
     }
 
+    /* Change Pass pages */
+    .changepass-pg {
+        flex-direction: column;
+        height: fit-content;
+    }
+    .changepass-pg .container1 p {
+        font-size: 16px;
+    }
+    .changepass-pg .content {
+        padding: 1rem 1rem;
+    }
+
+
     a.mobile_only_view{
         transform: none !important;
     }

@@ -5,6 +5,9 @@
     width: 100%;
     padding: 5px;
 }
+.settings-reqs .container1 {
+    padding: 5px 5px 168px 5px;
+}
 .sidenav-settings .container1 > h1{
     margin: 33px 0 1rem 21px;
     font-size: 25px;
@@ -13,6 +16,9 @@
     display: flex;
     align-items: center;
     margin: 33px 0 .5rem 10px;
+}
+.settings-reqs .title {
+    align-items: baseline;
 }
 .title:nth-child(2){
     width: 100%;
@@ -36,15 +42,30 @@
     text-align: center;
     margin-left: auto;
 }
-.items-wrap{
-    width: 100%;
+.sched-ctg {
     margin-top: 66px;
     padding: 0 60px;
+}
+.sched-ctg .title {
+    margin: 0 0 22px 0;
+}
+.sched-ctg .title h2 {
+    font-size: 18px;
+    font-weight: 700;
+}
+.items-wrap{
+    width: 100%;
 }
 .items-wrap > div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 7px 0;
+    padding: 7px 21px;
     border-bottom: 1px solid #F2F2F2;
+}
+
+@media screen and (max-width: 678px) {
+    .sched-ctg {
+        padding: 0 19px;
+    }
 }
