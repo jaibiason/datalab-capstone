@@ -16,7 +16,7 @@
             <input type="text" placeholder="Enter your email address">
             <label for="pass">Password</label>
             <input type="password" placeholder="Enter your password">
-            <a href="change_pass.php">Forgot your Password?</a>
+            <a href="change_pass_email.php">Forgot your Password?</a>
             <input type="submit" name="submit" value="Sign In">
         </form>
         <div class="cont_textwrap">

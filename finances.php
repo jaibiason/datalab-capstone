@@ -68,6 +68,21 @@
 
         </div>
 
+        <div class="bottom-cont">
+            <h1>Files</h1>
+            <div class="files-cont">
+
+                <?php for($i=0;$i<10;$i++) { ?>
+                <div>
+                    <p>June 2022 Debit</p>
+                    <p>Last Modified by:&nbsp; <?php echo "Juan Ponce Enrile" ?> </p>
+                    <p>Created by:&nbsp; <?php echo "Emilio Aguinaldo" ?> </p>
+                    <a href=""> view more </a>
+                </div>
+                <?php } ?> 
+
+            </div>
+        </div>
 
     </div>
     
