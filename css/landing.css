@@ -1,0 +1,93 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 83px;
+    width: 100%;
+    padding: 0 100px 0 100px;
+    background-color: white;
+    font-size: 20px;
+}
+    .header a{
+        color: #486590;
+        margin-right: 50px;
+    }
+    .header button{
+        font-size: 20px;
+        padding: 0 30px 0 30px;
+    }
+button.blue{
+    background-color: #486590;
+}
+.container{
+    display: flex;
+    height: 89vh;
+    background-color: #486590;
+    padding: 0 100px 0 100px;
+    color: white;
+}
+.about{
+    margin-right: 2rem;
+}
+    .about h1 { 
+        margin-top: 91px;
+        font-size: 40px;
+        letter-spacing: 0.03em;
+    }
+    .about p {
+        margin-top: 44px;
+        width: 534px;
+        line-height: 29px;
+        letter-spacing: 0.03em;
+    }
+.booking{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+}
+.booking-cont{
+    height: fit-content;
+    width: 86%;
+    max-width: 441px;
+    margin-top: 54px;
+    padding: 24px 24px 32px 24px;
+    justify-self: right;
+    background-color: white;
+    color: black;
+}
+form {
+    margin-top: 17px;
+}
+label {
+    color: #82827F;
+    font-size: 14px;
+}
+input, .select-wrapper {
+    width: 100%;
+    height: 40px;
+    margin: 4px 0 17px 0;
+    border: 1px solid #D9D9D9;
+    border-radius: 2px !important;
+    font-size: 14px;
+}
+    select{
+        width: 100%;
+        height: 100%;
+        font-size: 14px
+    }
+    .select-wrapper {
+        background-image: url(../assets/landing_select_arrow.svg);
+        background-size: 3%;
+        background-position: 95% 50%;
+    }
+    input[type=submit] {
+        color: white;
+        font-weight: 500;
+        background-color: #32B480;
+        border: none;
+        margin: 16px 0 0 0;
+    }
+
