@@ -28,6 +28,7 @@
 
         <div class="booking">
             <div class="booking-cont">
+                <!-- Form -->
                 <div class="form-cont">
                     <h2>Book an Event or Service</h2>
                     <form action="">
@@ -57,6 +58,21 @@
                     </form>
                 </div>
                 
+                <!-- Success View -->
+                <!-- .hidden hides section -->
+                <div class="success-cont hidden">
+                    <h2>Booking Success!</h2>
+                    <svg width="188" height="188" viewBox="0 0 188 188" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M59.6 98.3L85.4 124.1L128.4 72.5" stroke="#F3A452" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M94 180C141.496 180 180 141.496 180 94C180 46.5035 141.496 8 94 8C46.5035 8 8 46.5035 8 94C8 141.496 46.5035 180 94 180Z" stroke="#F3A452" stroke-width="15"/>
+                    </svg>
+                    <h3>Booking Code</h3>
+                    <div class="code">
+                        <p>14357</p>
+                    </div>
+                    <p>Your booking is a success! Please download our mobile applicaton to upload your requirements. The mobile application may be downloaded <a href="">here</a>.</p>
+                </div>
+                
             </div>
         </div>
 
@@ -64,5 +80,14 @@
 
 </body>
 <footer>
+    <div class="footer">
+        <img src="assets/landing_logo_sample.svg" alt="">
+        <div class="links">
+            <a href="">About Us</a>
+            <a href="">Download our App</a>
+            <a href="">Events and Services</a>
+            <a href="">Schedule an Event</a>
+        </div>
+    </div>
 </footer>
 </html> 

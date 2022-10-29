@@ -1,6 +1,7 @@
 * {
     font-family: 'Roboto', sans-serif;
 }
+.hidden {display: none !important;}
 .header{
     display: flex;
     align-items: center;
@@ -58,6 +59,9 @@ button.blue{
     background-color: white;
     color: black;
 }
+    .booking-cont h2 {
+        font-size: 30px;
+    }
 form {
     margin-top: 17px;
 }
@@ -90,4 +94,57 @@ input, .select-wrapper {
         border: none;
         margin: 16px 0 0 0;
     }
-
+.success-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .success-cont h2 {
+        align-self: flex-start;
+        margin-bottom: 44px;
+    }
+    .success-cont svg, .success-cont path {
+        height: 172px;
+        stroke: #32B480;
+    }
+    .success-cont h3 {
+        font-size: 20px;
+        margin-top: 52px;
+    }
+    .code {
+        font-size: 56px;
+        padding: 15px 82px;
+        margin-top: 9px;
+        background-color: #E9E9E9;
+        border-radius: 10px;
+    }
+    .success-cont > p {
+        margin-top: 29px;
+    }
+    .success-cont > p a {
+        color: #486590;
+        text-decoration: underline;
+    }
+.footer {
+    display: flex;
+    justify-content: space-between;
+    height: 194px;
+    background-color: white;
+    padding: 46px 100px 0 100px;
+}
+    .footer img {
+        height: 42px;
+    }
+.links {
+    display: flex;
+    flex-flow: wrap row;
+    gap: 16px 49px;
+    width: 374px;
+    height: fit-content;
+}
+.links a {
+    width: 162px;
+    height: fit-content;
+    color: #486590;
+    letter-spacing: 0.03em;
+}
