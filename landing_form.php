@@ -4,7 +4,7 @@
     <link rel="stylesheet" type="text/css" href="css/landing.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Datalab | Settings</title>
+    <title>Christ the King Parish</title>
     <?php 
     // $page = "settings";
     // require("navbar.php"); 
