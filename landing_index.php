@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">  
     <title>Christ the King Parish</title>
-    <?php 
-    // $page = "settings";
-    // require("navbar.php"); 
-    ?> 
     
 </head>
 <body>
@@ -102,24 +98,6 @@ target.addEventListener('wheel', event => {
     target.scrollLeft += event.deltaY
   }
 })
-
-    // (function() {
-    //     function scrollHorizontally(e) {
-    //         e = window.event || e;
-    //         var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-    //         document.getElementById('itemScroll').scrollLeft -= (delta * 40); // Multiplied by 40
-    //         e.preventDefault();
-    //     }
-    //     if (document.getElementById('itemScroll').addEventListener) {
-    //         // IE9, Chrome, Safari, Opera
-    //         document.getElementById('itemScroll').addEventListener('mousewheel', scrollHorizontally, false);
-    //         // Firefox
-    //         document.getElementById('itemScroll').addEventListener('DOMMouseScroll', scrollHorizontally, false);
-    //     } else {
-    //         // IE 6/7/8
-    //         document.getElementById('itemScroll').attachEvent('onmousewheel', scrollHorizontally);
-    //     }
-    // })();
 
 </script>
 </html> 
