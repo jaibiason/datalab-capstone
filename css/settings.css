@@ -64,6 +64,140 @@
     border-bottom: 1px solid #F2F2F2;
 }
 
+/* Configure Settings Page */
+.category {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    margin-top: 24px;
+}
+.items {
+    width: 30%;
+    /* height: 100%; */
+    margin-right: 20px;
+    padding: 17px 12px;
+    border: 1px dashed #D9D9D9;
+    border-radius: 8px;
+}
+    .items > p, .item-settings > p {
+        font-size: 16px;
+        margin-bottom: 23px;
+    }
+    .items > p { margin-left: 6px; }
+.items > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 12px 25px;
+    margin-bottom: 13px;
+    font-size: 16px;
+    color: #F3A452;
+    background-color: white;
+    border: 1px solid #F3A452;
+    border-radius: 7px;
+    cursor: pointer;
+}
+    .items > div > svg {
+        margin-right: 10px;
+    }
+    .items > div .btn-remove { display: none; }
+.items > div.selected {
+    justify-content: space-between;
+    color: white;
+    background-color: #F3A452;
+    border: 1px solid #F3A452;
+    border-radius: 7px;
+}
+    .items > div.selected path {
+        fill: white;
+    }
+    .items > div.selected .btn-remove {
+        display: unset;
+        margin-left: auto;
+    }
+
+.item-settings {
+    width: 100%;
+    /* height: 100%; */
+    padding: 17px 23px;
+    border: 1px dashed #D9D9D9;
+    border-radius: 8px;
+}
+.item-settings .setting {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 10px;
+}
+    .setting.enabled { display: flex; }
+.item-settings .setting .config {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    background: #F8F8F8;
+    border-radius: 7px;
+}
+    .config > div, .config input, 
+    .config-row > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 193px;
+        height: 43px;
+        background: #FFFFFF;
+        border: 1px solid #D9D9D9;
+        border-radius: 7px;
+    }
+    .config .select-wrapper {
+        justify-content: unset;
+        background-image: url("../assets/select_3_black.svg");
+        background-size: 5%;
+        background-repeat: no-repeat;
+        background-position: 91% 50%;
+    }
+    .config select {
+        width: 100%;
+        height: 100%;
+        font-size: 16px;
+    }
+    .config input {
+        font-size: 16px;
+        text-align: center;
+        padding: 8px ;
+    }
+    .config > p, .config-row > p {
+        margin: 0 10px;
+    }
+.config.multi-row {
+    flex-direction: column;
+    gap: 10px;
+}
+    .config.multi-row > div{
+        justify-content: unset;
+        width: 100%;
+        height: auto;
+        background: none;
+        border: none;
+        border-radius: unset;
+    }
+    .downPay > p {
+        width: 70px;
+        text-align: center;
+    }
+    .downPay, .fullPay { display: none !important; }
+    .downPay.enabled, .fullPay.enabled { display: flex !important; }
+
+.setting > button {
+    width: 29px;
+    height: 29px;
+    padding: 6px;
+    margin-left: auto;
+    background-color: #F3A452;
+}
+
 @media screen and (max-width: 678px) {
     .sched-ctg {
         padding: 0 19px;
