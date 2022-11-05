@@ -202,4 +202,24 @@
     .sched-ctg {
         padding: 0 19px;
     }
+    /* Settings Page */
+    .category {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+    .items {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    .item-settings {
+        padding: 17px 9px;
+    }
+    .item-settings .setting .config {
+        flex-wrap: wrap;
+        gap: 14px 0;
+    }
+        .config.multi-row > div {
+            flex-wrap: wrap;
+            gap: 14px 0;
+        }
 }
