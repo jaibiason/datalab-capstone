@@ -28,9 +28,10 @@ button.blue{
 }
 .container{
     display: flex;
-    height: 89vh;
+    min-height: 89vh;
+    max-height: fit-content;
     background-color: #486590;
-    padding: 0 100px 0 100px;
+    padding: 0 100px 1rem 100px;
     color: white;
 }
 .container.index {
@@ -282,4 +283,105 @@ input, .select-wrapper {
     height: fit-content;
     color: #486590;
     letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 678px) {
+    .header {
+        flex-direction: column;
+        height: fit-content;
+        padding: 8px 1.5rem;
+    }
+    .book-login {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+        .header button {
+            font-size: 1rem;
+        }
+    .container {
+        flex-direction: column;
+        padding: 0 1.5rem 1rem 1.5rem;
+    }
+    .about {
+        margin: 2rem 0 0 0;
+    }
+        .about h1 {
+            margin: 0;
+            text-align: center;
+        }
+        .about p {
+            width: fit-content;
+            text-align: center;
+        }
+    .booking {
+        justify-content: center;
+    }
+    .booking-cont {
+        width: 100%;
+    }
+    .footer {
+        flex-direction: column;
+        height: fit-content;
+        padding: 1rem;
+    }
+    .links {
+        width: 100%;
+        margin-top: 2rem;
+        justify-content: center;
+        text-align: center;
+    }
+    /* Landing Index */
+    .cover {
+        display: flex;
+        align-items: center;
+        padding: 2rem;
+        background-size: auto;
+        background-position: 39% 41%;
+    }
+    .title {
+        height: fit-content;
+        margin: 0;
+    }
+        .title h1 {
+            font-size: 34px;
+        }
+    .bookEvent {
+        margin: 2rem;
+        flex-direction: column;
+        width: 86%;
+        height: fit-content;
+        padding: 1.5rem;
+    }
+        .bookEvent img {
+            height: 78%;
+        }
+        .bookEvent .text {
+            width: 100%;
+            margin: 1rem 0 0 0;
+            text-align: center;
+        }
+    .events-services {
+        padding: 1.5rem;
+    }
+        .itemScroll .item {
+            min-width: 245px;
+            height: 171px;
+        }
+    .download-cont {
+        flex-direction: column;
+        padding: 1.5rem;
+        justify-content: center;
+        overflow-x: hidden;
+    }
+        .download-cont img {
+            margin-left: -16%;
+            min-width: 462px;
+        }
+        .download-cont .text {
+            margin: 1rem 0 3rem 0;
+            text-align: center;
+        }
 }
