@@ -1,0 +1,207 @@
+.sidenav-dashboard{
+    display: flex;
+}
+.sidenav-dashboard h1{
+    font-size: 25px;
+}
+.sidenav-dashboard h2{
+    font-size: 18px;
+}
+.sidenav-dashboard h3{
+    font-size: 14px;
+}
+.sidenav-dashboard h4{
+    font-size: 12px;
+}
+.sidenav-dashboard .mobile{
+    display: none;
+}
+.sidenav-dashboard .container1{
+    display: inherit;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+    align-content: flex-start;
+    padding: 55px 20px 0 20px;
+}
+.container1 .rev-rem{
+    display: flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    height: 30%;
+    width: 100%;    
+    margin: 0 auto 38px auto;
+}
+.gray{
+    color: #B6B6B6;
+}
+.green{
+    color: #00AA07;
+}
+.revenue .stats{
+    margin: 30px 0 20px;
+}
+.rev-rem .reminders{
+    height: 230px;
+    width: 100%;
+    max-width: 1054px;
+    border-radius: 7px;
+    border: 1px solid #E9E9E9;
+    align-items: center;
+    box-shadow: 4px 4px 4px 0px #E9E9E940;
+    padding: 30px 15px 0 ;
+    margin-left: 20px;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.reminders__item{
+    padding: 15px 0;
+    border-bottom: 1px solid #F2F2F2;
+}
+.reminders__item > *{
+    line-height: 24px;
+}
+.reminders__item div{
+    display: flex;
+    justify-content: space-between;
+}
+.reminders a{
+    text-decoration: underline;
+}
+
+/* TABLE */
+.usertransactions{
+    border-radius: 7px;
+    width: 100%;
+    max-width: 1054px;
+    height: 427px;
+    margin: 0 auto;
+    border: 1px solid #E9E9E9;
+    box-shadow: 4px 4px 4px 0px #e9e9e940;
+    overflow: auto;
+}
+.usertransactions table{
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 7px;
+    font-size: 14px;
+}
+.usertransactions thead{
+    background-color: #E0E0E0;
+}
+.usertransactions thead th{
+    text-align: start;
+    padding: 10px 0;
+    background-color: #E0E0E0;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.usertransactions tbody{
+    font-size: 14px;
+}
+.usertransactions tr th:first-child, .usertransactions tr td:first-child{
+    padding: 0 0 0 20px;
+}
+.usertransactions > span{
+    width: 100%;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: underline;
+    margin: 1rem 0 1.5rem;
+    display: inline-block;
+}
+table tbody .new::after{
+    right: 40px;
+}
+/* .usertransactions .new{
+    display: flex;
+    width: 45px;
+    height: 17px;
+    font-size: 9px;
+    color: white;
+    background: #F3A452;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+} */
+.usertransactions .hidden{
+    display: none ;
+}
+/* .usertransactions .new{
+    justify-content: center;
+    align-items: center;
+} */
+
+
+@media screen and (max-width: 678px){
+    .sidenav-dashboard .web{
+        display: none;
+    }
+    .sidenav-dashboard .mobile{
+        display: unset;
+    }
+    .sidenav-dashboard, .sidenav-dashboard > *,
+    .sidenav-dashboard .rev-rem{
+        flex-direction: column-reverse !important;
+    }
+    .sidenav-dashboard .container2{
+        width: 100vw;
+        margin-top: 0;
+    }
+    .container2 .calendar-sched{
+        border: unset;
+        width: 100vw;
+    }
+    .sidenav-dashboard .container1{
+        flex-basis: unset;
+        padding: 0;
+    }
+    .usertransactions{
+        width: 100vw;
+        margin: 0;
+        height: fit-content;
+        background: #F3F3F3;
+    }
+    .usertransactions__item .mobile{
+        margin: 10px 0;
+    }
+    .usertransactions
+    .usertransactions__item > div{
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #E9E9E9;
+        padding: 12px 14px;
+        background: white;
+    }
+    .usertransactions__item div > *{
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+    }
+    .usertransactions div:first-child{
+        margin-top: 20px;
+        border-top: 1px solid #E9E9E9;
+    }
+    .usertransactions__item > span{
+        text-align: end;
+    }
+    
+
+    .rev-rem .reminders{
+        width: 100vw;
+        max-width: none;
+        height: 340px;
+        margin: 0;
+    }
+    .rev-rem .revenue{
+        width: 100vw;
+        margin-top: 20px;
+    }
+    .reminders .reminders__item{
+        padding: 24px 0 36px;
+    }
+    .reminders__item h3{
+        font-weight: 700;
+    }
+}
