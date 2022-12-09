@@ -1,0 +1,9 @@
+.sidenav-bookings{
+    display: flex;
+}
+.sidenav-bookings .container1 {
+    width: 100%;
+}
+.sidenav-bookings h1{
+    margin: 33px 0 64px 9px;
+}
